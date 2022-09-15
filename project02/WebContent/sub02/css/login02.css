@@ -89,7 +89,7 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 		
 		.maincontent{width:1140px; height:530px; border:8px solid #f9f9f9; margin: 50px 0 0 284px;}
 		
-		.loginBox{width:1140px; height:490px; text-align:center;}
+		.loginBox{width:1140px; height:490px; text-align:center; position : relative;}
 			.inputBox{width:380px; height:400px; margin:80px 0 0 230px;}
 			
 				
@@ -98,7 +98,6 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 				.label3{margin-top:28px; font-size:0.9em; float:left; width:100px; height:30px; text-align:left; margin-right:15px;}
 				.label4{margin-top:28px; font-size:0.9em; float:left; width:100px; height:30px; text-align:left; margin-right:15px;}
 				.label5{margin-top:28px; font-size:0.9em; float:left; width:100px; height:30px; text-align:left; margin-right:15px;}
-				.inputBox input{float:left;}
 				
 				.loginInput1{width:380px; height:70px; float:left;}
 				.loginInput2{width:380px; height:70px; float:left; margin-top:-15px;}
@@ -109,17 +108,17 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 				.loginInput1>#userId{width:243px; height:37px; margin-top:5px; border:1px solid #dddddd; padding-left:7px; float:left;}
 				
 				.loginInput2>#userPw{width:243px; height:37px; margin-top:20px; border:1px solid #dddddd; padding-left:7px; float:left;}
+				
 				.loginInput3>#userPw{width:243px; height:37px; margin-top:20px; border:1px solid #dddddd; padding-left:7px; float:left;}
 				
 				.loginInput4>#userName{width:243px; height:37px; margin-top:20px; border:1px solid #dddddd; padding-left:7px; float:left;}
 				
 				.loginInput5>#userEmail{width:243px; height:37px; margin-top:20px; border:1px solid #dddddd; padding-left:7px; float:left;}
 				
-				
 			
-			.loginBtn{width:180px; height:80px; margin: 152px 0 0 80px;}
-			.loginBtn>input.loginBtn1{width:155px; height:80px; background:#cccccc; color:#333333; margin:5px 0 0 5px; float:left; cursor:pointer;}
-			.loginBtn>input.loginBtn2{width:155px; height:80px; background:#3d3884; color:#ffffff; margin:15px 0 0 5px; float:left; cursor:pointer;}
+			input.btn1{display:block; width:155px; height:80px; background:#3d3884; color:#ffffff; cursor:pointer; position : absolute; top : 261px; right : 260px;}
+			input.btn2{display:block; width:155px; height:80px; background:#cccccc; color:#333333; cursor:pointer; position : absolute; top : 151px; right : 260px;}
+			
 	
 	
 	

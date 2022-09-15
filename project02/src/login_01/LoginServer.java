@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 //로그인 시 admin ID로 로그인하면 회원 관리와 회원 삭제 기능을 보여주도록 작성해보세요.
+//진짜 주소를 숨길 수 있다. (보안)
 @WebServlet("/login_01")
 public class LoginServer extends HttpServlet{
 	@Override
@@ -22,8 +23,8 @@ public class LoginServer extends HttpServlet{
 			request.setCharacterEncoding("utf-8");
 			response.setContentType("text/html;charset=utf-8");
 			PrintWriter out = response.getWriter();
-			String id = request.getParameter("userId");
-			String pw = request.getParameter("userPw");
+			String id = request.getParameter("id");
+			String pw = request.getParameter("pwd");
 			
 			System.out.println("아이디 :"+id);
 			System.out.println("패스워드 :"+pw);

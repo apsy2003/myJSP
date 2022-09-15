@@ -1,4 +1,4 @@
-package login02;
+package login_02;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/login02")
-public class MemberServlet extends HttpServlet{
+@WebServlet("/login_02")
+public class MemberServlet3 extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -45,6 +45,9 @@ public class MemberServlet extends HttpServlet{
 			 vo.setName(_name);
 			 vo.setEmail(_email);	
 			 dao.addMember(vo);
+		}else if(command!= null && command.equals("delMember")) {
+			String id = request.getParameter("id");
+			dao.delMember(id);
 		}
 		List list=dao.listMembers();
 		out.print("<html><body>");
@@ -62,9 +65,9 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-	                    +"&nbsp;</td></tr>");	 		
+	                    +"<a href='/project02/login_02?command=delMember&id="+id+"'>삭제</a></td></tr>");	 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project03/sub02/sub02_1.html'>새 회원 등록하기</a>");
+		out.print("<a href='/project02/sub02/login02.html'>새 회원 등록하기</a>");
 	}
 }

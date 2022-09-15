@@ -15,8 +15,8 @@
 		function fn_sendMember(){
 		   // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
 		   var frmMember=document.frmlogin;
-		   var id=frmMember.userId.value;
-		   var pwd=frmMember.userPw.value;
+		   var id=frmMember.id.value;
+		   var pwd=frmMember.pwd.value;
 		   if(id.length==0 ||id==""){
 		      alert("아이디는 필수입니다.");
 		   }else if(pwd.length==0 ||pwd==""){
@@ -197,10 +197,10 @@
 							<form name="frmlogin" method="post" encType="UTF-8">	
 								<div class="InputBox fl">
 									<div class="loginInput1">
-										<input type="text" id="userId" name="userId" placeholder="아이디"/>
+										<input type="text" id="userId" name="id" placeholder="아이디"/>
 									</div>
 									<div class="loginInput2">
-										<input type="password" id="userPw" name="userPw" placeholder="비밀번호"/>
+										<input type="password" id="userPw" name="pwd" placeholder="비밀번호"/>
 									</div>
 								</div>
 								<div class="loginBtn fl">

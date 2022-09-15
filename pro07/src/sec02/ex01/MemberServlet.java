@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/member2")
+//@WebServlet("/member2")
 public class MemberServlet extends HttpServlet{
 
 	@Override
