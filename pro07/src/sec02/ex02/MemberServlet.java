@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import sec02.ex02.MemberDAO;
 import sec02.ex02.MemberVO;
 
-@WebServlet("/member3")
+//@WebServlet("/member3")
 public class MemberServlet extends HttpServlet{
 
 	@Override
@@ -70,6 +70,6 @@ public class MemberServlet extends HttpServlet{
 	                    +"&nbsp;</td></tr>");	 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/pro07/memberForm.html'>새 회원 등록하기</a>");
+		out.print("<a href='/prject03/sub02/sub02-1.html'>새 회원 등록하기</a>");
 	}
 }
