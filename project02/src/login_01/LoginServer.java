@@ -22,15 +22,15 @@ public class LoginServer extends HttpServlet{
 			request.setCharacterEncoding("utf-8");
 			response.setContentType("text/html;charset=utf-8");
 			PrintWriter out = response.getWriter();
-			String id = request.getParameter("user_id");
-			String pw = request.getParameter("user_pw");
+			String id = request.getParameter("userId");
+			String pw = request.getParameter("userPw");
 			
 			System.out.println("아이디 :"+id);
 			System.out.println("패스워드 :"+pw);
 			
 			//ID와 비밀번호가 없으면 다시 로그인으로 이동한다.
 			
-			if(id!= null &&(id.length()!=0)){
+			if(id!= null && (id.length()!=0)){
 				if(id.equals("admin")) {
 					out.print("<html>");
 					out.print("<body>");
@@ -47,12 +47,12 @@ public class LoginServer extends HttpServlet{
 					out.print("</body>");
 					out.print("</html>");
 				} 
-			}else {
+			} else {
 				out.print("<html>");
 				out.print("<body>");
-				out.print("아이디를 입력하세요.");
+				out.print("로그인을 다시 진행해주세요.");
 				out.print("<br>");
-				out.print("<a href='/project02/sub02/login01.html'>로그인 창으로 이동</a>");
+				out.print("<a href='sub02/login01.html'>로그인 창으로 이동</a>");
 				out.print("</body>");
 				out.print("</html>");
 				
