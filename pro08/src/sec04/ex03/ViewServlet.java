@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ViewServlet extends HttpServlet{
 
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
@@ -33,7 +33,7 @@ public class ViewServlet extends HttpServlet{
 				String email = memberVO.getEmail();
 				Date joinDate = memberVO.getJoinDate();
 				out.print("<tr><td>" + id + "</td><td>" + pwd + "</td><td>" + name + "</td><td>" + email + "</td><td>" + joinDate + "</td><td>" 
-				+ "<a href='/pro08/member3?command=delMember&id=" + id + "'>삭제</a></td></tr>");
+				+ "<a href='/pro08/member?command=delMember&id=" + id + "'>삭제</a></td></tr>");
 				
 			}
 			out.print("</table></body></html>");
