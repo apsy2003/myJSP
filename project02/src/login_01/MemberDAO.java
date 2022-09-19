@@ -26,11 +26,11 @@ public class MemberDAO {
         }
     }	
 	
-	public List<MemberVO> listMembers() {
-		List<MemberVO> list = new ArrayList<MemberVO>();
+	public List listMembers() {
+		List list = new ArrayList();
 		try {
 			con = dataFactory.getConnection();
-			String query = "select * from t_member ";
+			String query = "select * from t_member";
 			System.out.println("prepareStatememt: " + query);
 
 			pstmt = con.prepareStatement(query);
@@ -97,4 +97,29 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}	
+	
+	public boolean isExisted(MemberVO memberVO) {
+		boolean result = false;
+		String id = memberVO.getId();
+		String pwd = memberVO.getPwd();		
+		try {
+			con = dataFactory.getConnection();
+			//decode() 함수를 이용해 id와 pwd가 존재하면 true, 존재하지 않으면 false를 return
+			String query = "select decode(count(*),1,'true','false') as result from t_member";
+			query += " where id=? and pwd=?";
+			System.out.println(query);
+			//파라메터로 전달된 id와 pwd를 이용해 데이터베이스에 있는지 조회
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, id);
+			pstmt.setString(2, pwd);	
+			ResultSet rs = pstmt.executeQuery();
+			//커서를 첫번째 레코드로 위치시킵니다.
+			rs.next(); 
+			result = Boolean.parseBoolean(rs.getString("result"));
+			System.out.println("result=" + result);			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 }

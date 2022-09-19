@@ -12,29 +12,27 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/show")
 public class ShowMember extends HttpServlet{
-	
-	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		String id ="", pwd="" ;
 		Boolean isLogon=false;
-		HttpSession session = request.getSession(false);
+		HttpSession session =  request.getSession(false);
 		
-		if(session != null) {
+		if( session != null){
 			isLogon=(Boolean)session.getAttribute("isLogon");
-			if(isLogon==true) {
-				id = (String)session.getAttribute("login.id");
-				pwd = (String)session.getAttribute("login.pwd");
-				out.print("<html><body>");
-				out.print("æ∆¿Ãµ: " + id+"<br>");
-				out.print("∫Òπ–π¯»£: " + pwd+"<br>");
-				out.print("</body></html>");
+			if(isLogon==true){ 
+		        id = (String)session.getAttribute("login.id");
+		        pwd = (String)session.getAttribute("login.pwd");
+	   	        out.print("<html><body>");
+		        out.print("ÏïÑÏù¥Îîî: " + id+"<br>");
+		        out.print("ÎπÑÎ∞ÄÎ≤àÌò∏: " + pwd+"<br>");
+		        out.print("</body></html>");				
 			} else {
 				response.sendRedirect("login3.html");
 			}
-		} else {
-			response.sendRedirect("login3.html");
-		}
+		}else{
+            response.sendRedirect("login3.html");
+        }
 	}
 }
