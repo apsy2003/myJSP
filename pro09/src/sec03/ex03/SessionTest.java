@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/sess2") //사용자 작업단위
+//@WebServlet("/sess2") //사용자 작업단위
 public class SessionTest extends HttpServlet{
 
 	@Override
