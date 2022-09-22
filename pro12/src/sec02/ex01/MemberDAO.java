@@ -27,14 +27,22 @@ public class MemberDAO {
         }
     }	
 	
-	public List listMembers() {
-		List list = new ArrayList();
+	public List listMembers(MemberVO memberVO) {
+		List membersList = new ArrayList();
+		String _name = memberVO.getName();
 		try {
 			con = dataFactory.getConnection();
 			String query = "select * from t_member ";
+			
+			if((_name!=null && _name.length()!=0)) {
+				query+="where name=?";
+				pstmt = con.prepareStatement(query);
+				pstmt.setString(1,  _name);
+			}else {
+				pstmt = con.prepareStatement(query);
+			}
+			
 			System.out.println("prepareStatememt: " + query);
-
-			pstmt = con.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
 				// 조회한 레코드의 각 컬럼 값을 받아 se온다
@@ -43,15 +51,13 @@ public class MemberDAO {
 				String name = rs.getString("name");
 				String email = rs.getString("email");
 				Date joinDate = rs.getDate("joinDate");
-
 				MemberVO vo = new MemberVO();
 				vo.setId(id);
 				vo.setPwd(pwd);
 				vo.setName(name);
 				vo.setEmail(email);
 				vo.setJoinDate(joinDate);
-				
-				list.add(vo);				
+				membersList.add(vo);				
 			}
 			rs.close();
 			pstmt.close();
@@ -59,7 +65,7 @@ public class MemberDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return list;
+		return membersList;
 	}
 	
 	public void addMember(MemberVO memberVO) {
