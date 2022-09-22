@@ -43,11 +43,11 @@ public class LoginServer extends HttpServlet{
 
 			out.print("<html><body>");
 			out.print("안녕하세요 " + user_id + "님!!!<br>");
-			out.print("<a href='show'>회원정보보기</a>");
+			out.print("<a href='sub02/member_info.jsp'>회원정보보기</a>");
 			out.print("</body></html>");
 		} else {
 			out.print("<html><body>회원 아이디가 틀립니다.");
-			out.print("<a href='sub02/login01.html'>다시 로그인하기</a>");
+			out.print("<a href='sub02/login01.jsp'>다시 로그인하기</a>");
 			out.print("</body></html>");
 		}		
 	}

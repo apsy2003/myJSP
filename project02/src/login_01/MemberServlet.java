@@ -2,6 +2,7 @@ package login_01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -30,7 +31,7 @@ public class MemberServlet extends HttpServlet{
 		PrintWriter out=response.getWriter();
 		
 		MemberDAO dao=new MemberDAO();
-		List membersList = dao.listMembers();
+		List membersList = new ArrayList();
 		
 		request.setAttribute("membersList", membersList);
 		RequestDispatcher dispatch = request.getRequestDispatcher("viewMembers");
