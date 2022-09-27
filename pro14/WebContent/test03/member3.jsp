@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8" 
     pageEncoding="UTF-8"
     isELIgnored="false" %>
 
 <!-- core 태그 라이브러리를 사용하기 위해서 반드시 선언해야 되는 부분 -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%
 	request.setCharacterEncoding("UTF-8");
 %> 
-
 <%-- <c:set> 태그를 이용해서 변수를 선언 value 속성에는 표현언어를 사용해서 초기화할 수 있다. --%>
 <c:set var="id" value="hong" scope="page" />
 <c:set var="pwd" value="1234" scope="page" />
@@ -15,11 +15,14 @@
 <c:set var="age" value="${22}" scope="page" />
 <c:set var="height" value="${177}" scope="page" />
 
+<c:remove var="age" />
+<c:remove var="height" />
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>회원 정보 출력창</title>
 </head>
 <body>
 	<table align="center" border=1>
@@ -38,7 +41,6 @@
 			<td>${age}</td>
 			<td>${height}</td>
 		</tr>
-	
 	</table>
 </body>
 </html>
