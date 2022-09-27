@@ -1,8 +1,10 @@
-﻿<!DOCTYPE html>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>sub3</title>
+<meta charset="UTF-8">
+<title>sub3</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,133 +13,13 @@
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<link rel="stylesheet" href="css/sub03.css"/>
-	<link rel="shortcut icon" href="../main/images/index.ico"/>
+	<link rel="shortcut icon" href="../index/images/index.ico"/>
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/sub03.js"></script>	
 </head>
 <body>
-	<header>
-		<div id="header" class="cf">
-			<div id="gnb">
-				<div class="gnbWrap">
-					<div class="gnb1 fl">
-						<form name="searchForm" id="searchForm" method="get">
-							<select name="managedc" id="manage_dc" title="도서관 선택">
-								<option value="op" selected="selected">도서관바로가기</option>
-								<option value="op" >석수도서관</option>
-								<option value="op" >만안도서관</option>
-								<option value="op" >삼덕도서관</option>
-								<option value="op" >박달도서관</option>
-								<option value="op" >평촌도서관</option>
-								<option value="op" >관양도서관</option>
-								<option value="op" >비산도서관</option>
-								<option value="op" >호계도서관</option>
-								<option value="op" >어린이도서관</option>
-								<option value="op" >벌말도서관</option>
-							</select>
-						</form>
-					</div>
-					<div class="gnb2 fr">
-						<ul class="gmenu fl">
-							<li><a href="../sub02/login01.html" tabindex="1">로그인</a></li>
-							<li><a href="../sub02/login02.html" tabindex="2">회원가입</a></li>
-							<li><a href="#" tabindex="3">사이트맵</a></li>
-						</ul>
-						<div class="gsns fl">
-							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="images/top_snsKakao.png" alt="카카오"/></a>
-							<a href="https://www.instagram.com/anyanglib/" tabindex="5"><img src="images/top_snsInsta.png" alt="인스타"/></a>
-							<a href="https://twitter.com/anyanglib" tabindex="6"><img src="images/top_snsTwitter.png" alt="트위터"/></a>
-							<a href="https://www.youtube.com/channel/UCOTyiNx6Di5A_Yn4SrzNMzg
-" tabindex="7"><img src="images/top_snsYoutube.png" alt="유튜브"/></a>
-							</div>
-					</div>
-				</div>
-			</div>
-			<nav class="nav1 cf">
-				<div class="sub1Wrap">
-					<h1 class="logo fl"><a href="../index.html" tabindex="8"><img src="images/logo.png" alt="로고"/></a></h1>
-					<ul class="sub1 cf">
-						<li class="sub1_1 fl"><a href="../sub02/login01.html" tabindex="9">자료검색</a></li>
-						<li class="sub1_1 fl"><a href="../sub02/login02.html" tabindex="9">독서정보</a></li>
-						<li class="sub1_1 fl"><a href="sub03.html" tabindex="9">문화행사참여</a></li>
-						<li class="sub1_1 fl"><a href="../sub04/sub04.html" tabindex="9">이용안내</a></li>
-						<li class="sub1_1 fl"><a href="../sub02/login01.html" tabindex="9">도서관소개</a></li>
-						<li class="sub1_1 fl"><a href="../sub02/login02.html" tabindex="9">마이페이지</a></li>
-						<li class="searchbtn fl"><a href="#" tabindex="54"><img src="images/btn_search.png" width="30" height="30" alt="돋보기"/></a></li>
-					</ul>
-				</div>		
-			</nav>
-			<nav class="nav2 cf">
-				<div class="sub2Wrap">
-					<div class="sub2Inner">
-						<div class="sub2">
-							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="10">소장자료검색</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="11">주제별검색</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="12">신착자료검색</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="13">정기간행물검색</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="14">비치희망도서검색</a></li>
-							</ul>
-						</div>
-						<div class="sub2">
-							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="16">사서추천도서</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="17">도서대출베스트</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="18">원문/학술정보</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="19">향토자료(경기도메모리)</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="20">공공도서관인기도서</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="21">도서기증안내</a></li>
-							</ul>
-						</div>
-						<div class="sub2">
-							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="sub03.html" tabindex="23">독서마라톤</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="24">문화행사신청</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="25">영화상영</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="26">스마트영어도서관</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="27">북스타트</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="28">독서동아리</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="29">설문조사</a></li>
-							</ul>
-						</div>
-						<div class="sub2">
-							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="31">도서관소식</a></li>
-								<li class="sub2_2"><a href="sub03.html" tabindex="32">자주하는질문</a></li>
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="33">도서관이용안내</a></li>
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="34">상호대차</a></li>
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="35">모바일앱</a></li>
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="36">스마트도서관</a></li>
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="37">책배달서비스</a></li>
-								<li class="sub2_2"><a href="../sub04/sub04.html" tabindex="38">전자도서관</a></li>
-							</ul>
-						</div>
-						<div class="sub2">
-							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="40">인사말</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="41">안양시도서관안내</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="42">연혁</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="43">자료현황</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="44">조직</a></li>
-								<li class="sub2_2"><a href="../sub02/login01.html" tabindex="45">도서관관련법규</a></li>
-							</ul>
-						</div>
-						<div class="sub2 last">
-							<ul class="sub2_1 fl ">
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="47">나의정보</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="48">도서이용내역</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="49">상호대차조회</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="50">관심도서목록</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="51">추천도서목록</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="52">희망도서신청조회</a></li>
-								<li class="sub2_2"><a href="../sub02/login02.html" tabindex="53">문화행사신청조회</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
+	<%@ include file="main/header.jsp" %>
+	
 	<section id="container">
 		<div class="contentTitle cf">
 			<h3 class="hidden">자주하는질문</h3>
@@ -483,55 +365,7 @@
 			</div>
 		</div>
 	</section>
-	<footer id="footer1" class="fl">
-		<div class="footerUp">
-			<div class="fu_Wrap">
-				<div class="fmenu fl">
-					<ul>
-						<li class="f_first"><a href="#" tabindex="152">개인정보처리방침</a></li>
-						<li class="f_last"><a href="#" tabindex="152">이메일추출방지정책</a></li>
-						<li class="f_last"><a href="#" tabindex="152">도서관관련법규</a></li>
-					</ul>
-				</div>
-				<div class="finput fr">
-					<form name="footerForm" id="footerForm" method="get">
-						<div class="footerform">
-							<select name="manageCd" id="manageCd" title="관련기관사이트">
-									
-									<option value="select" selected="selected">관련기관 사이트</option>
-									<option value="1" >국립중앙도서관</option>
-									<option value="2" >국립전자도서관</option>
-									<option value="3" >국립어린이청소년도서관</option>
-									<option value="4" >국회도서관</option>
-									<option value="5" >경기도사이버도서관</option>
-									<option value="6" >경기도메모리</option>
-									<option value="7" >책바다</option>
-									<option value="8" >책나래</option>
-									<option value="9" >책이음</option>
-									<option value="10" >안양시청</option>
-									<option value="11" >안양시평생교육원</option>
-									<option value="12" >안녕,안양</option>
-									<option value="13" >사서에게물어보세요</option>
-									<option value="14" >국립중앙장애인도서관</option>
-										
-							</select>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<footer id="footer2" class="fl">	
-		<div class="fd_Wrap">
-			<div class="footerDown fl">
-				<p>(14052)경기도 안양시 동안구 관평로 213 평촌시립도서관</p>
-				<address>
-				Copyright 2020. Anyang Municipal Library All Rights Reserved.</address>
-				<div class="imgWrap fr">
-					<img src="images/mark_wa.png" alt="웹접근성로고"/>
-				</div>
-			</div>
-		</div>
-	</footer>
+	
+	<%@ include file="main/footer.jsp" %>
 </body>
 </html>

@@ -26,11 +26,15 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 	
 			/* form[name="searchForm"]{}; */
 			
-		.gnb2{width: 370px; height:40px;}
+		.gnb2{width: 500px; height:40px;}
 			.gmenu{ float:left;}
 			.gmenu>li{float:left; margin-left:10px;}
 			.gmenu>li>a{line-height:40px; font-size:0.9em; color:#ffffff;}
 			.gmenu>li>a:hover{text-decoration:underline;}
+			
+			.gtrans>li{float:left; margin-left:10px;}
+			.gtrans>li>a{line-height:40px; font-size:0.9em; color:#ffffff;}
+			.gtrans>li>a:hover{text-decoration:underline;}
 			
 			.gsns{width:152px; margin-left:20px;}
 			.gsns>a{display:block; margin: 7px 0 0 7px; float:left;}

@@ -49,5 +49,7 @@
 <%	
 	}
 %>
+
+<a href='../index.jsp'>메인페이지가기</a>
 </body>
 </html>

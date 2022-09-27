@@ -31,7 +31,7 @@
 		      // 전송 방법을 post로 지정
 		      frmMember.method="post";
 		      // 서블릿 매핑 이름을 member3으로 지정
-		      frmMember.action="/project01/sub02/login_01";
+		      frmMember.action="/project01/login_01";
 		      // 서블릿으로 전송
 		      frmMember.submit();
 		   } 
@@ -39,7 +39,7 @@
 	</script>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %>
+	<%@ include file="main/header.jsp" %>
 	<section id="container">
 		<div class="contentTitle cf">
 			<h3 class="hidden">로그인</h3>
@@ -67,10 +67,10 @@
 			<h2 class="hidden">회원정보</h2>
 				<ul>
 					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>로그인</span></li>
-					<li class="menu1"><a href="#"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu1"><a href="login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">아이디찾기</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				</ul>
 			</div>
 			<div class="mainWrap">
@@ -83,10 +83,10 @@
 							<form name="frmlogin" method="post" encType="UTF-8">	
 								<div class="InputBox fl">
 									<div class="loginInput1">
-										<input type="text" id="userId" name="user_id" placeholder="아이디"/>
+										<input type="text" id="userId" name="user_id" placeholder="아이디" value="jiji93" />
 									</div>
 									<div class="loginInput2">
-										<input type="password" id="userPw" name="user_pwd" placeholder="비밀번호"/>
+										<input type="password" id="userPw" name="user_pwd" placeholder="비밀번호" value="123456" />
 									</div>
 								</div>
 								<div class="loginBtn fl">
@@ -101,7 +101,7 @@
 									<li class="mark"><a href="#">|</a></li>
 									<li class="PW"><a href="#">비밀번호재발급</a></li>
 									<li class="mark"><a href="#">|</a></li>
-									<li class="JOIN"><a href="#">회원가입</a></li>
+									<li class="JOIN"><a href="login02.jsp">회원가입</a></li>
 								</ul>
 							</div>
 						</div>
@@ -117,6 +117,6 @@
 			</div>
 		</div>
 	</section>
-	<%@ include file="../main/footer.jsp" %>
+	<%@ include file="main/footer.jsp" %>
 </body>
 </html>
