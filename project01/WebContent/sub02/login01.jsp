@@ -12,7 +12,7 @@
 	<meta name="Author" content="박지현"/>
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
-	<link rel="stylesheet" href="./css/login01.css"/>	
+	<link rel="stylesheet" href="css/login01.css"/>	
 	<link rel="shortcut icon" href="../main/images/index.ico"/>
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/sub02.js"></script>
@@ -31,7 +31,7 @@
 		      // 전송 방법을 post로 지정
 		      frmMember.method="post";
 		      // 서블릿 매핑 이름을 member3으로 지정
-		      frmMember.action="/project01/login_01";
+		      frmMember.action="/project01/mem.do";
 		      // 서블릿으로 전송
 		      frmMember.submit();
 		   } 
@@ -83,10 +83,10 @@
 							<form name="frmlogin" method="post" encType="UTF-8">	
 								<div class="InputBox fl">
 									<div class="loginInput1">
-										<input type="text" id="userId" name="user_id" placeholder="아이디" value="jiji93" />
+										<input type="text" id="userId" name="user_id" placeholder="아이디" value="admin" />
 									</div>
 									<div class="loginInput2">
-										<input type="password" id="userPw" name="user_pwd" placeholder="비밀번호" value="123456" />
+										<input type="password" id="userPw" name="user_pwd" placeholder="비밀번호" value="admin" />
 									</div>
 								</div>
 								<div class="loginBtn fl">

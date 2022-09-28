@@ -1,4 +1,5 @@
-package login_02;
+package sec01.ex01;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -74,18 +75,4 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}
-	
-	public void delMember(String id) {
-		try {
-			conn = dataFactory.getConnection();
-			String query = "delete from t_member" + " where id=?";
-			System.out.println("prepareStatememt: " + query);
-			pstmt = conn.prepareStatement(query);
-			pstmt.setString(1, id);	
-			pstmt.executeUpdate();
-			pstmt.close();			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}	
 }

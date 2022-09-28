@@ -7,11 +7,10 @@
 	request.setCharacterEncoding("UTF-8");
 %> 
 <!DOCTYPE html>
-
+<link rel="stylesheet" href="css/login01.css"/>	
 <head>
 <meta charset="UTF-8">
 	<title>header</title>
-	<link rel="stylesheet" href="main/css/header.css"/>    
 </head>    
 	<header>
 	<fmt:setLocale value="${param.lo}" />

@@ -14,6 +14,8 @@
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<link rel="stylesheet" href="./css/login02.css"/>	
 
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/sub02.js"></script>
 <script>
 function fn_sendMember(){
    // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
