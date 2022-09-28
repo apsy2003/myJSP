@@ -24,7 +24,6 @@
 	일반 숫자로 표현시 : ${priceNumber}<br>
 	
 	
-	
 	<h2>formatDate 예제</h2>
 	<c:set var="now" value="<%=new Date() %>" />
 	<fmt:formatDate value="${now }" type="date" dateStyle="full" /><br>
