@@ -24,17 +24,16 @@ public class BoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	public List selectAllArticles() {
 		List articlesList = new ArrayList();
 		try {
 			conn = dataFactory.getConnection();
-			String query = "SELECT LEVEL, articleNO, parentNO, title, content, id, writeDate"
-						 + "from t_board"
-						 + "START WITH parentNO=0" + "CONNECT BY PRIOR articleNO=parentNO"
-						 + "ORDER SIBLINGS BY articleNO DESC";
+			String query = "SELECT LEVEL,articleNO,parentNO,title,content,id,writeDate" 
+			             + " from t_board"
+					     + " START WITH  parentNO=0" + " CONNECT BY PRIOR articleNO=parentNO"
+					     + " ORDER SIBLINGS BY articleNO DESC";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();
@@ -63,5 +62,5 @@ public class BoardDAO {
 			e.printStackTrace();
 		}
 		return articlesList;
-	}
+	}	
 }

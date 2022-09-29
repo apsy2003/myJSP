@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/borad/*")
+@WebServlet("/board/*")
 public class BoardController extends HttpServlet {
 	BoardService boardService;
 	ArticleVO articleVO;
@@ -21,16 +21,13 @@ public class BoardController extends HttpServlet {
 		boardService = new BoardService();
 	}
 	
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
 		doHandle(request, response);
-	}
+	}	
 	
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
 		doHandle(request, response);
-	}
-	
+	}	
 	
 	private void doHandle(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
 		String nextPage = "";
