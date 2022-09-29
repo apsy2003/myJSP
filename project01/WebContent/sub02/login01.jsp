@@ -31,7 +31,7 @@
 		      // 전송 방법을 post로 지정
 		      frmMember.method="post";
 		      // 서블릿 매핑 이름을 member3으로 지정
-		      frmMember.action="/project01/mem.do";
+		      frmMember.action="/project01/member/*";
 		      // 서블릿으로 전송
 		      frmMember.submit();
 		   } 
@@ -39,7 +39,7 @@
 	</script>
 </head>
 <body>
-	<%@ include file="main/header.jsp" %>
+	<%@ include file="./main/header.jsp" %>
 	<section id="container">
 		<div class="contentTitle cf">
 			<h3 class="hidden">로그인</h3>
@@ -117,6 +117,6 @@
 			</div>
 		</div>
 	</section>
-	<%@ include file="main/footer.jsp" %>
+	<%@ include file="./main/footer.jsp" %>
 </body>
 </html>

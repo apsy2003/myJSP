@@ -7,7 +7,7 @@
 	request.setCharacterEncoding("UTF-8");
 %> 
 <!DOCTYPE html>
-<link rel="stylesheet" href="main/css/header.css"/>
+<link rel="stylesheet" href="css/header.css"/>
 <head>
 <meta charset="UTF-8">
 	<title>header</title>
@@ -46,17 +46,17 @@
 							<li class="fl"><a href="login02.jsp?lo=en"><fmt:message key="menu.nav48" /></a></li>
 						</ul>
 						<div class="gsns fl">
-							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="images/top_snsKakao.png" alt="카카오"/></a>
-							<a href="https://www.instagram.com/anyanglib/" tabindex="5"><img src="images/top_snsInsta.png" alt="인스타"/></a>
-							<a href="https://twitter.com/anyanglib" tabindex="6"><img src="images/top_snsTwitter.png" alt="트위터"/></a>
-							<a href="https://www.youtube.com/channel/UCOTyiNx6Di5A_Yn4SrzNMzg" tabindex="7"><img src="images/top_snsYoutube.png" alt="유튜브"/></a>
+							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="main/images/top_snsKakao.png" alt="카카오"/></a>
+							<a href="https://www.instagram.com/anyanglib/" tabindex="5"><img src="main/images/top_snsInsta.png" alt="인스타"/></a>
+							<a href="https://twitter.com/anyanglib" tabindex="6"><img src="main/images/top_snsTwitter.png" alt="트위터"/></a>
+							<a href="https://www.youtube.com/channel/UCOTyiNx6Di5A_Yn4SrzNMzg" tabindex="7"><img src="main/images/top_snsYoutube.png" alt="유튜브"/></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<nav class="nav1 cf">
 				<div class="sub1Wrap">
-					<h1 class="logo fl"><a href="../index.jsp" tabindex="8"><img src="images/logo.png" alt="로고"/></a></h1>
+					<h1 class="logo fl"><a href="../index.jsp" tabindex="8"><img src="main/images/logo.png" alt="로고"/></a></h1>
 					<ul class="sub1 cf">
 						<li class="sub1_1 fl"><a href="login01.jsp" tabindex="9"><fmt:message key="menu.nav1" /></a></li>
 						<li class="sub1_1 fl"><a href="login02.jsp" tabindex="9"><fmt:message key="menu.nav2" /></a></li>
@@ -64,7 +64,7 @@
 						<li class="sub1_1 fl"><a href="../sub04/sub04.jsp" tabindex="9"><fmt:message key="menu.nav4" /></a></li>
 						<li class="sub1_1 fl"><a href="login01.jsp" tabindex="9"><fmt:message key="menu.nav5" /></a></li>
 						<li class="sub1_1 fl"><a href="login02.jsp" tabindex="9"><fmt:message key="menu.nav6" /></a></li>
-						<li class="searchbtn fl"><a href="#" tabindex="54"><img src="images/btn_search.png" width="30" height="30" alt="돋보기"/></a></li>
+						<li class="searchbtn fl"><a href="#" tabindex="54"><img src="main/images/btn_search.png" width="30" height="30" alt="돋보기"/></a></li>
 					</ul>
 				</div>		
 			</nav>

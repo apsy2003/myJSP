@@ -364,3 +364,10 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
 	... 8 common frames omitted
+2022-09-29 15:23:04,249 [Worker-11: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-29 17:38:36,637 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @8145052ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-29 17:38:36,906 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+2022-09-29 17:38:36,922 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2022-09-29 17:38:36,922 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2022-09-29 17:38:36,922 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2022-09-29 17:38:36,991 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4c5aa923{/wse,null,AVAILABLE}

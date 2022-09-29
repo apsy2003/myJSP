@@ -53,7 +53,7 @@
 					<address>
 					Copyright 2020. Anyang Municipal Library All Rights Reserved.</address>
 					<div class="imgWrap fr">
-						<img src="images/mark_wa.png" alt="웹접근성로고"/>
+						<img src="main/images/mark_wa.png" alt="웹접근성로고"/>
 					</div>
 				</div>
 			</div>
