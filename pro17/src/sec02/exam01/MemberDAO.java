@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec02.exam01;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -21,21 +21,21 @@ public class MemberDAO {
 		try {
 			Context ctx = new InitialContext();
 			Context envContext = (Context) ctx.lookup("java:/comp/env");
-			dataFactory = (DataSource) envContext.lookup("jdbc/oracle");	
+			dataFactory = (DataSource) envContext.lookup("jdbc/oracle");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	public List<MemberVO> listMembers(){
+	public List<MemberVO> listMembers() {
 		List<MemberVO> membersList = new ArrayList();
 		try {
 			conn = dataFactory.getConnection();
-			String query = "select*from t_member order by joinDate desc";
+			String query = "SELECT * FROM t_member ORDER BY joinDate DESC";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();
-			while(rs.next()) {
+			while (rs.next()) {
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
@@ -47,7 +47,7 @@ public class MemberDAO {
 			rs.close();
 			pstmt.close();
 			conn.close();
-		} catch(SQLException e){
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return membersList;
@@ -60,8 +60,7 @@ public class MemberDAO {
 			String pwd = m.getPwd();
 			String name = m.getName();
 			String email = m.getEmail();
-			String query = "INSERT INTO t_member(id, pwd, name, email)" + "VALUES(?,?,?,?)";
-			
+			String query = "INSERT INTO t_member(id, pwd, name, email)" + " VALUES(?, ? ,? ,?)";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, id);

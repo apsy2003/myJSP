@@ -4,7 +4,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="m" class="sec01.ex01.MemberBean" />
+<jsp:useBean id="m" class="sec01.exam01.MemberBean" />
 <jsp:setProperty name="m" property="*" />
 <!DOCTYPE html>
 <html>

@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec02.exam01;
 
 import java.sql.Date;
 
@@ -10,7 +10,7 @@ public class MemberVO {
 	private Date joinDate;
 	
 	public MemberVO() {
-		System.out.println("MemberVO 생성자 호출");
+		
 	}
 	
 	public MemberVO(String id, String pwd, String name, String email) {
@@ -19,7 +19,6 @@ public class MemberVO {
 		this.pwd = pwd;
 		this.name = name;
 		this.email = email;
-		
 	}
 	
 	public MemberVO(String id, String pwd, String name, String email, Date joinDate) {
@@ -70,6 +69,4 @@ public class MemberVO {
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
 	}
-	
-	
 }

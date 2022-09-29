@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"
     isELIgnored="false" %>
     <!-- 표현언어기능 활성화 ="false"로 사용됨 -->
-<jsp:useBean id="m1" class="sec01.ex01.MemberBean" scope="page" />
+<jsp:useBean id="m1" class="sec01.exam01.MemberBean" scope="page" />
 <jsp:setProperty name="m1" property="name" value="이순신" />
 <jsp:useBean id="m2" class="java.util.ArrayList" scope="page" />    
     

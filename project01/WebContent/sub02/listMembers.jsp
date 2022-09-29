@@ -41,7 +41,7 @@
 </head>
 <body>
 
-<%@ include file="main/header.jsp" %>
+<%@ include file="main/header3.jsp" %>
 <section class="cls">
 <div class="clsWrap">
 <p class="cls1">회원정보</p>

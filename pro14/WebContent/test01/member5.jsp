@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    import="java.util.*, sec01.ex01.*"	pageEncoding="UTF-8"
+    import="java.util.*,sec01.exam01.*"	pageEncoding="UTF-8"
     isELIgnored="false" %>
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="m1" class="sec01.ex01.MemberBean" />
+<jsp:useBean id="m1" class="sec01.exam01.MemberBean" />
 <!-- 회원가입창에서 전송된 정보를 빈 속성에 설정 -->
 <jsp:setProperty name="m1" property="*" />
 <jsp:useBean id="membersList" class="java.util.ArrayList" />

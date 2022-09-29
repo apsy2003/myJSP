@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec01.exam01;
 
 import java.io.IOException;
 import java.util.List;
@@ -19,20 +19,19 @@ public class MemberController extends HttpServlet{
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doHandle(request,response);
+		doHandle(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doHandle(request,response);
+		doHandle(request, response);
 	}
-	
-	protected void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		List<MemberVO> membersList = memberDAO.listMembers();
-		request.setAttribute("membersList", membersList);
-		RequestDispatcher dispatch = request.getRequestDispatcher("/sub02/login02.jsp");
-			dispatch.forward(request, response);
+		request.setAttribute("membersList",membersList);
+		RequestDispatcher dispatch = request.getRequestDispatcher("/test01/listMembers.jsp");
+		dispatch.forward(request, response);
 	}
-	
 }

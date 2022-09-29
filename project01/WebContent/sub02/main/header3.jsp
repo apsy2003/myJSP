@@ -42,8 +42,8 @@
 							<li><a href="#" tabindex="3"><fmt:message key="menu.nav04" /></a></li>
 						</ul>
 						<ul class="gtrans fl">
-							<li class="gfirst fl"><a href="login01.jsp?lo=ko"><fmt:message key="menu.nav47" /></a></li>
-							<li class="fl"><a href="login01.jsp?lo=en"><fmt:message key="menu.nav48" /></a></li>
+							<li class="gfirst fl"><a href="listMembers.jsp?lo=ko"><fmt:message key="menu.nav47" /></a></li>
+							<li class="fl"><a href="listMembers.jsp?lo=en"><fmt:message key="menu.nav48" /></a></li>
 						</ul>
 						<div class="gsns fl">
 							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="images/top_snsKakao.png" alt="카카오"/></a>
