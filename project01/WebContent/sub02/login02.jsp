@@ -44,7 +44,7 @@ function fn_sendMember(){
 </script>
 </head>
 <body>
-	<%@ include file="main/header2.jsp" %>
+	<%@ include file="main/header.jsp" %>
 	<section id="container">
 		<div class="contentTitle cf">
 			<h3 class="hidden">회원가입</h3>

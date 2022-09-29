@@ -47,10 +47,10 @@
 			<h2 class="hidden">이용안내</h2>
 				<ul>
 					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>이용안내</span></li>
-					<li class="menu2"><a href="#">도서관소식</a></li>
+					<li class="menu2"><a href="#"><span class="Text">도서관소식</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu1"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
-					<li class="menu2"><a href="#">상호대차</a></li>
+					<li class="menu2"><a href="#">상호대차</a><span class="Img1"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></li>
 					<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>

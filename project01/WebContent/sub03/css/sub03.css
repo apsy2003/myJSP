@@ -1,9 +1,9 @@
-ï»¿html{overflow-y : scroll; overflow-x : scroll;}
+html{overflow-y : scroll; overflow-x : scroll;}
 *{margin : 0; padding : 0;}
 form, fieldset, input, img{border : 0;}
 button{border : 0 transparent; cursor : pointer; overflow : visible; background : transparent;}
 a{text-decoration : none;}
-body{ font-family: 'Noto Sans', 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', 'AppleGothic', sans-serif;}
+body{ font-family: 'Noto Sans', '¸¼Àº °íµñ', 'Malgun Gothic', 'AppleGothic', sans-serif;}
 ul li{list-style : none;}
 a{text-decoration : none; color : #000000;}
 div{box-sizing: border-box;}
@@ -13,7 +13,7 @@ div{box-sizing: border-box;}
 .cf:after{content : ''; display : block; clear : both;}
 .hidden{display:none;}
 
-/* í—¤ë” ìž‘ì—… 1 */
+/* Çì´õ ÀÛ¾÷ 1 */
 
 header{width:100%; height: 140px;  /* background: #00b300; */}
 	#header{width: 100%; height:140px; margin:0 auto;}
@@ -36,7 +36,7 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 			.gsns>a{display:block; margin: 7px 0 0 7px; float:left;}
 			
 			
-/* í—¤ë” ìž‘ì—… 2 */
+/* Çì´õ ÀÛ¾÷ 2 */
 
 .nav1{width:100%; height:100px; border-bottom: 1px solid #dddddd;}
 	.sub1Wrap{width:1420px; height:100px; margin:0 auto; z-index:999999;}
@@ -54,7 +54,7 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 	.sub2_1{ float: left; padding:20px 0 0 7px; height:300px; display:none;}
 	.sub2_2{float:left; width:177px; height:30px;}
 
-/* ì»¨í…Œì´ë„ˆ ìž‘ì—… */
+/* ÄÁÅ×ÀÌ³Ê ÀÛ¾÷ */
 
 #container{width:100%;}
 	.contentTitle{width:100%; height:149px; background:#f9f9f9;}
@@ -69,7 +69,7 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 				.Icon2>li{background-image: url(../images/ico_sns.png); background-repeat: no-repeat; background-position: 0px 0px; width: 40px; height: 40px; margin: 0 auto;}
 	
 	
-/* ë©”ë‰´ë°” ìž‘ì—… */
+/* ¸Þ´º¹Ù ÀÛ¾÷ */
 #contents{width:1420px; height:100%; background:#ffffff; margin:0 auto; }
 	.Menubar{width:240px; height:720px; z-index:1; margin-top:-168px;}
 		.menutitle{width:240px; height:142px; background:#6b64be; color:#ffffff; position:relative; border:2px solide #3d3884; box-sizing:border-box;}
@@ -79,11 +79,12 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 			.menu1>a{ color:#6b64be; }
 			.menu2{width:240px; height:71px; background:#ffffff;  font-size:0.9em; line-height:71px; border-left:1px solid #ededed; border-right:1px solid #ededed; border-bottom:1px solid #ededed; box-sizing:border-box; padding-left:10px;}
 			.Img{float:right; margin-right:15px; margin-top:-5px;}
+			.Img1{float:right; margin-right:-13px; margin-top:-5px;}
 			.PImg{float:right; margin-right:15px; margin-top:2px;}
 			.PPImg{float:right; margin-right:-12px; margin-top:2px;}
 			
 			
-/* QnAíŽ˜ì´ì§€ */
+/* QnAÆäÀÌÁö */
 
 .QnApage{width:1140px; margin-left:284px;}
 	.QnA{width:1140px; height:60px;}
@@ -92,9 +93,9 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 			#LibSearch{width:160px; height:35px; background:#ffffff; margin-top:12px;}
 				
 			.SearchBtn>#button{width:75px; height:40px; background:#444444; margin:10px 0 0 10px;}
-			.SearchBtn>input[value="í™•ì¸"]{color:#ffffff;}
+			.SearchBtn>input[value="È®ÀÎ"]{color:#ffffff;}
 			
-/* QnA íƒ€ì´í‹€*/
+/* QnA Å¸ÀÌÆ²*/
 
 #board{width:1140px; height:100%; }
 #board > div input{display: none;}
@@ -116,7 +117,7 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 			.A_Text{float:left; width:900px; background:red; font-size:1.0em; color:#828282; white-space: nowrap; text-align: justify; text-overflow: ellipsis;} */
 					
 
-/*íŽ˜ì´ì§€ ë²ˆí˜¸*/
+/*ÆäÀÌÁö ¹øÈ£*/
 
 .pageBtn{width:1140px; margin-top:40px;}
 	.Btnbox{width:227px; height:32px; margin:0 auto;}
@@ -128,7 +129,7 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 	
 	
 	
-/* í‘¸í„° ìž‘ì—… */
+/* ÇªÅÍ ÀÛ¾÷ */
 
 #footer1{width:100%; height:80px; margin-top:70px; background:#dddfe3;}
 .footerUp{width:1420px; height:80px; margin:0 auto;}
@@ -149,4 +150,4 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 	.footerDown{width:1420px; height:120px; padding-top:28px; margin:0 auto;}
 		.footerDown>p{float:left; width:1039px; color:#555555; margin:6px 145px 0 0px;}
 		.footerDown>address{float:left; width:1039px; color:#555555; margin:8px 145px 0 0px;}
-		.imgWrap{width:100px; height:89px; margin-top:-29px;}
+		.imgWrap{width:100px; height:89px; margin-top:-21px;}

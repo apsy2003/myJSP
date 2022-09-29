@@ -48,7 +48,7 @@
 				<h2 class="hidden">이용안내</h2>
 				<ul>
 					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>이용안내</span></li>
-					<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="Img2"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="IImg"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
