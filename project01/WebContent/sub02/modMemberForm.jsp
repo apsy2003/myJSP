@@ -13,6 +13,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>회원 정보 수정창</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="Generator" content="Notepad++" />
+	<meta name="Author" content="박지현"/>
+	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
+	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
+
+	<script src="${contextPath}/sub02/js/jquery-1.7.1.min.js"></script>
+	<script src="${contextPath}/sub02/js/sub02.js"></script>
+	
 <style>
 	form, input {border : 1px;}
 	#modWrap{width:100%; height:832px;}

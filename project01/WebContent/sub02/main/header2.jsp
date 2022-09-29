@@ -7,10 +7,11 @@
 	request.setCharacterEncoding("UTF-8");
 %> 
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/header.css"/>
+<link rel="stylesheet" href="${contextPath}/sub02/main/css/header.css"/>
 <head>
 <meta charset="UTF-8">
 	<title>header</title>
+
 </head>    
 	<header>
 	<fmt:setLocale value="${param.lo}" />
@@ -46,7 +47,7 @@
 							<li class="fl"><a href="login02.jsp?lo=en"><fmt:message key="menu.nav48" /></a></li>
 						</ul>
 						<div class="gsns fl">
-							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="main/images/top_snsKakao.png" alt="카카오"/></a>
+							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="${contextPath}/main/images/top_snsKakao.png" alt="카카오"/></a>
 							<a href="https://www.instagram.com/anyanglib/" tabindex="5"><img src="main/images/top_snsInsta.png" alt="인스타"/></a>
 							<a href="https://twitter.com/anyanglib" tabindex="6"><img src="main/images/top_snsTwitter.png" alt="트위터"/></a>
 							<a href="https://www.youtube.com/channel/UCOTyiNx6Di5A_Yn4SrzNMzg" tabindex="7"><img src="main/images/top_snsYoutube.png" alt="유튜브"/></a>

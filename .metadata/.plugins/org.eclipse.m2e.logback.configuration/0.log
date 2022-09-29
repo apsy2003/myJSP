@@ -371,3 +371,5 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2022-09-29 17:38:36,922 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
 2022-09-29 17:38:36,922 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
 2022-09-29 17:38:36,991 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4c5aa923{/wse,null,AVAILABLE}
+2022-09-29 17:38:37,007 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1b84b433{HTTP/1.1,[http/1.1]}{0.0.0.0:59695}
+2022-09-29 17:38:37,007 [main] INFO  org.eclipse.jetty.server.Server - Started @8145431ms
