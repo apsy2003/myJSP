@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    isELIgnored="false" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+<%
+	request.setCharacterEncoding("UTF-8");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -228,7 +235,7 @@
 							</div>
 							<div class="pageNum fl">
 								<div class="page"><a class="fNum" href="#">1</a></div>
-								<div class="page"><a href="#">2</a></div>
+								<div class="page"><a href="${contextPath}/board/listArticle.do">2</a></div>
 								<div class="page"><a href="#">3</a></div>
 								<div class="page"><a href="#">4</a></div>
 								<div class="page"><a href="#">5</a></div>
@@ -242,6 +249,7 @@
 								<button class="btn1">&gt;&gt;</button>
 								<button class="btn2">&gt;</button>
 							</div>
+							<a  class="cls1"  href="${contextPath}/board/articleForm.do">글쓰기</a>
 						</div>
 					</div>
 				</div>

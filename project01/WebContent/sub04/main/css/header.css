@@ -123,6 +123,6 @@ header{width:100%; height: 140px;  /* background: #00b300; */}
 #footer2{width:100%; height:120px; background:#f2f4f7;}
 .fd_Wrap{width:1420px; height:120px; margin:0 auto;}	
 	.footerDown{width:1420px; height:120px;  margin:0 auto;}
-		.footerDown>p{float:left; width:1039px; color:#555555; margin:46px 145px 0 0px;}
+		.footerDown>p{float:left; width:1039px; color:#555555; margin:-8px 145px 0 0px;}
 		.footerDown>address{float:left; width:1039px; color:#555555; margin:8px 145px 0 0px;}
 		.imgWrap{width:100px; height:70px; margin-top:-26px;}
