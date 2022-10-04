@@ -9,7 +9,6 @@
 <c:set var="contextPath"  value="${pageContext.request.contextPath}"  /> 
 <head>
 <meta charset="UTF-8">
-<title>글쓰기창</title>
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 	//제이쿼리를 이용해서 이미지 파일 첨부시 미리보기 기능을 구현
@@ -50,7 +49,7 @@
 </style>
 </head>
 <body>
-<%@ include file="./main/header.jsp" %>
+<%@ include file="../sub04/main/header.jsp" %>
 <section id="articleWrap">
 	<div class=article>
 		<h1 style="text-align:center">새글 쓰기</h1>
@@ -73,13 +72,13 @@
 			    <td align="right"> </td>
 			    <td colspan="2">
 			       <input type="submit" value="글쓰기" />
-			       <input type=button value="목록보기"onClick="backToList(this.form)" />
+			       <input type=button value="목록보기" onClick="backToList(this.form)" />
 			    </td>
 		     </tr>
 		    </table>
 		 </form>
 	</div>  
 </section> 
-<%@ include file="./main/footer.jsp" %>
+<%@ include file="../sub04/main/footer.jsp" %>
 </body>
 </html>

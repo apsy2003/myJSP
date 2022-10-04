@@ -1,4 +1,4 @@
-package board_01;
+package sec03.brd08;
 
 import java.net.URLEncoder;
 import java.sql.Connection;
@@ -12,6 +12,7 @@ import java.util.Map;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
+
 
 public class BoardDAO {
 	private DataSource dataFactory;

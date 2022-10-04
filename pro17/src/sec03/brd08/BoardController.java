@@ -1,4 +1,4 @@
-package board_01;
+package sec03.brd08;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,20 +28,20 @@ public class BoardController extends HttpServlet {
 	private static String ARTICLE_IMAGE_REPO = "C:\\board\\article_image";
 	BoardService boardService;
 	ArticleVO articleVO;
-	
+
 	public void init(ServletConfig config) throws ServletException {
 		boardService = new BoardService();
 		articleVO = new ArticleVO();
 	}
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)  throws ServletException, IOException {
 		doHandle(request, response);
-	}	
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doHandle(request, response);
-	}	
-	
+	}
+
 	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nextPage = "";
 		request.setCharacterEncoding("utf-8");
@@ -62,7 +63,7 @@ public class BoardController extends HttpServlet {
 				articlesMap.put("section", section);
 				articlesMap.put("pageNum", pageNum);
 				request.setAttribute("articlesMap", articlesMap);
-				nextPage = "/sub04/listArticles.jsp";
+				nextPage = "/board07/listArticles.jsp";
 			} else if (action.equals("/listArticles.do")){  			
 				String _section=request.getParameter("section");
 				String _pageNum=request.getParameter("pageNum");
@@ -75,9 +76,9 @@ public class BoardController extends HttpServlet {
 				articlesMap.put("section", section);
 				articlesMap.put("pageNum", pageNum);
 				request.setAttribute("articlesMap", articlesMap);
-				nextPage = "/sub04/listArticles.jsp";
+				nextPage = "/board07/listArticles.jsp";
 			} else if (action.equals("/articleForm.do")) {
-				nextPage = "/sub04/articleForm.jsp";
+				nextPage = "/board07/articleForm.jsp";
 			} else if (action.equals("/addArticle.do")) {
 				int articleNO = 0;
 				Map<String, String> articleMap = upload(request, response);
@@ -106,7 +107,7 @@ public class BoardController extends HttpServlet {
 				String articleNO = request.getParameter("articleNO");
 				articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
 				request.setAttribute("article", articleVO);
-				nextPage = "/sub04/viewArticle.jsp";
+				nextPage = "/board07/viewArticle.jsp";
 			} else if (action.equals("/modArticle.do")) {
 				Map<String, String> articleMap = upload(request, response);
 				int articleNO = Integer.parseInt(articleMap.get("articleNO"));
@@ -153,7 +154,7 @@ public class BoardController extends HttpServlet {
 				int parentNO = Integer.parseInt(request.getParameter("parentNO"));
 				session = request.getSession();
 				session.setAttribute("parentNO", parentNO);
-				nextPage = "/sub04/replyForm.jsp";
+				nextPage = "/board06/replyForm.jsp";
 			} else if (action.equals("/addReply.do")) {
 				session = request.getSession();
 				int parentNO = (Integer) session.getAttribute("parentNO");
@@ -180,7 +181,7 @@ public class BoardController extends HttpServlet {
 				return;
 			
 			}else {
-				nextPage = "/sub04/listArticles.jsp";
+				nextPage = "/board06/listArticles.jsp";
 			}
 
 			RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);

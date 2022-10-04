@@ -11,7 +11,7 @@
 <html>
 <head>
 <style>
-
+	.cls1 {text-decoration:none;}
 	.cls2{margin-left:1175px; width:100px; height:32px; display:block; background:#eeeeee;
 			border:1px solid #dddddd; color:#464646; text-align:center; line-height:2; cursor:pointer;}
 	#listWrap{width:100%; height:832px;}
@@ -34,7 +34,7 @@
 </head>
 <body>
 
-<%@ include file="./main/header.jsp" %>
+<%@ include file="../sub04/main/header.jsp" %>
 <section id="listWrap">
 <div class="list">
 <table align="center" border="1"  width="80%"  >
@@ -80,9 +80,45 @@
 	</c:when>
 </c:choose>	
 </table>
+<div class="cls2">
+ <c:if test="${totArticles != null }" >
+      <c:choose>
+        <c:when test="${totArticles >100 }">  <!-- 글 개수가 100 초과인경우 -->
+	      <c:forEach   var="page" begin="1" end="10" step="1" >
+	         <c:if test="${section >1 && page==1 }">
+	          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section-1}&pageNum=${(section-1)*10 +1 }">&nbsp; pre </a>
+	         </c:if>
+	          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${(section-1)*10 +page } </a>
+	         <c:if test="${page ==10 }">
+	          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section+1}&pageNum=${section*10+1}">&nbsp; next</a>
+	         </c:if>
+	      </c:forEach>
+        </c:when>
+        <c:when test="${totArticles ==100 }" >  <!--등록된 글 개수가 100개인경우  -->
+	      <c:forEach   var="page" begin="1" end="10" step="1" >
+	        <a class="no-uline"  href="#">${page } </a>
+	      </c:forEach>
+        </c:when>
+        
+        <c:when test="${totArticles< 100 }" >   <!--등록된 글 개수가 100개 미만인 경우  -->
+	      <c:forEach   var="page" begin="1" end="${totArticles/10 +1}" step="1" >
+	         <c:choose>
+	           <c:when test="${page==pageNum }">
+	            <a class="sel-page"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
+	          </c:when>
+	          <c:otherwise>
+	            <a class="no-uline"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
+	          </c:otherwise>
+	        </c:choose>
+	      </c:forEach>
+        </c:when>
+      </c:choose>
+    </c:if>
+</div>    
+<br><br>
 <a  class="cls1"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a>
 </div>
 </section>
-<%@ include file="./main/footer.jsp" %>
+<%@ include file="../sub04/main/footer.jsp" %>
 </body>
 </html>

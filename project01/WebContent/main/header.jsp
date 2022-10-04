@@ -11,7 +11,50 @@
 <head>
 <meta charset="UTF-8">
 	<title>header</title>
-	<link rel="stylesheet" href="main/css/header.css"/>    
+	<link rel="stylesheet" href="main/css/header.css"/>
+		<script>
+	//로그인 카운트다운
+	var tid;
+	var cnt = parseInt(5);//초기값(초단위)
+	function counter_init() {
+		tid = setInterval("counter_run()", 1000);
+	}
+
+	function counter_reset() {
+		clearInterval(tid);
+		cnt = parseInt(60);
+		counter_init();
+	}
+
+	function counter_run() {
+		document.getElementById("counter").innerText = time_format(cnt);
+		cnt--;
+		if(cnt < 0) {
+			clearInterval(tid);
+			self.location = "sub02/login01.jsp"; //로그인 경로 넣기
+		}
+	}
+	function time_format(s) {
+		var nHour=0;
+		var nMin=0;
+		var nSec=0;
+		if(s>0) {
+			nMin = parseInt(s/60);
+			nSec = s%60;
+
+			if(nMin>60) {
+				nHour = parseInt(nMin/60);
+				nMin = nMin%60;
+			}
+		} 
+		if(nSec<10) nSec = "0"+nSec;
+		if(nMin<10) nMin = "0"+nMin;
+
+		return ""+nHour+":"+nMin+":"+nSec;
+	}	
+
+	counter_init();
+	</script>    
 </head>    
 	<header>
 	<fmt:setLocale value="${param.lo}" />
@@ -37,6 +80,11 @@
 						</form>
 					</div>
 					<div class="gnb2 fr">
+						<div class="timeControl fl">	
+							<span id="counter"></span>
+							<span>후 자동으로 로그인페이지로 이동합니다.</span>
+							<input class="timeBtn fl" type="button" value="연장" onclick="counter_reset()">	
+						</div>					
 						<ul class="gmenu fl">
 							<li><a href="sub02/login01.jsp" tabindex="1"><fmt:message key="menu.nav02" /></a></li>
 							<li><a href="sub02/login02.jsp" tabindex="2"><fmt:message key="menu.nav03" /></a></li>
