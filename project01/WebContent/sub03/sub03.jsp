@@ -27,7 +27,7 @@
 				<div class="Librarytitle">
 					<ul class="Info">
 						<li class="title">자주하는질문</li>
-						<li class="Icoimg"><a href="../index.html"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><a href="/project01/index.html"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">이용안내</li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>

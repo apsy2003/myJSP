@@ -98,7 +98,7 @@
 					</c:when>
 				</c:choose>
 			</table>  
-			<a href="${contextPath}/sub02/login02.jsp"><p class="cls2">회원 가입하기</p></a>
+			<a href="${contextPath}/sub02/join_finish.jsp"><p class="cls2">회원 가입하기</p></a>
 		</div>
 	</section>	
 	<%@ include file="./main/footer.jsp" %>

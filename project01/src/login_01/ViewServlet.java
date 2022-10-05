@@ -33,11 +33,11 @@ public class ViewServlet extends HttpServlet{
 				String email = memberVO.getEmail();
 				Date joinDate = memberVO.getJoinDate();
 				out.print("<tr><td>" + id + "</td><td>" + pwd + "</td><td>" + name + "</td><td>" + email + "</td><td>" + joinDate + "</td><td>" 
-				+ "<a href='/pro08/member3?command=delMember&id=" + id + "'>삭제</a></td></tr>");
+				+ "<a href='/project01/member?command=delMember&id=" + id + "'>삭제</a></td></tr>");
 				
 			}
 			out.print("</table></body></html>");
-			out.print("<a href='/project02/sub02/login01.html'>새 회원 등록하기</a>");
+			out.print("<a href='/project01/sub02/login02.jsp'>새 회원 등록하기</a>");
 	}
 
 }

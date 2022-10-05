@@ -13,7 +13,7 @@
 	</style>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %>
+	<%@ include file="../main/error.jsp" %>
 	<section id=imgbg>
 		<img src="../images/500.png" class="img" />
 	</section>	

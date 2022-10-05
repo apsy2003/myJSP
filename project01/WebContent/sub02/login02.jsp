@@ -32,11 +32,11 @@ function fn_sendMember(){
       alert("이름은 필수입니다.");
    }else if(email.length==0 ||email==""){
       alert("이메일은 필수입니다.");
-   }else{
+   }else{ alert("회원가입이 완료되었습니다.");
       // 전송 방법을 post로 지정
       frmMember.method="post";
       // 서블릿 매핑 이름을 member3으로 지정
-      frmMember.action="/project01/login_02";
+      frmMember.action="/project01/member/addMember.do";
       // 서블릿으로 전송
       frmMember.submit();
    } 
@@ -44,7 +44,7 @@ function fn_sendMember(){
 </script>
 </head>
 <body>
-	<%@ include file="main/header.jsp" %>
+	<%@ include file="main/header2.jsp" %>
 	<section id="container">
 		<div class="contentTitle cf">
 			<h3 class="hidden">회원가입</h3>
@@ -52,7 +52,7 @@ function fn_sendMember(){
 				<div class="Librarytitle">
 					<ul class="Info">
 						<li class="title">회원가입</li>
-						<li class="Icoimg"><a href="#"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><a href="project01/index.jsp"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">회원정보</li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
@@ -72,16 +72,16 @@ function fn_sendMember(){
 			<h2 class="hidden">회원정보</h2>
 				<ul>
 					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>회원가입</span></li>
-					<li class="menu2"><a href="login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="project01/sub02/login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">아이디찾기</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu1"><a href="login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu1"><a href="project01/sub02/login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				</ul>
 			</div>
 			<div class="mainWrap">
 				<div class="loginExplain">
 					<ul>
-						<li class="loTitle"><span class="purple">안양시립도서관</span>회원가입 안내</li>
+						<li class="loTitle"><span class="purple">안양시립도서관</span> 회원가입 안내</li>
 						<li>· 도서관 회원가입을 위해 ‘안양시청 통합회원’으로 가입 후, 도서관 신규 회원으로 등록하는 절차가 필요합니다.</li>
 						<li>· 아래 안내에 따라 회원가입 절차를 진행 해주시기 바랍니다.</li>
 						<li>※ 기존 도서회원으로 핸드폰번호가 변경된 경우 도서관 자료실 담당자에게<br/> 도서회원 핸드폰번호를 변경 요청하거나, 홈페이지 담당자(031-8045-6126)에게 문의하시기 바랍니다.</li>
@@ -112,10 +112,15 @@ function fn_sendMember(){
 									<input type="text" id="userEmail" name="email" placeholder="이메일"/>
 								</div>
 							</div>
-							<input class="btn1" type="button" value="가입하기" onclick="fn_sendMember()" />
-							<input class="btn2" type="reset" value="다시입력" />
+							<div class="loginBtn fl">
+								<input class="btn1" type="button" value="가입하기" onclick="fn_sendMember()" />
+								<input class="btn2" type="reset" value="다시입력" />
+							</div>
+							
+							<!-- <input class="btn1" type="button" value="가입하기" onclick="fn_sendMember()" />
+							<input class="btn2" type="reset" value="다시입력" /> -->
 							<!-- <hidden> 태그를 이용해 서블릿에게 회원 등록임을 알린다 -->
-							<input  type="hidden" name="command" value="addMember" />	
+							<!-- <input  type="hidden" name="command" value="addMember" />	 -->
 						</form>
 					</div>
 				</div>

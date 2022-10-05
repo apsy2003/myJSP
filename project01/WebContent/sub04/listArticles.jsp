@@ -4,21 +4,18 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+<c:set  var="articlesList"  value="${articlesMap.articlesList}" />
+<c:set  var="totArticles"  value="${articlesMap.totArticles}" />
+<c:set  var="section"  value="${articlesMap.section}" />
+<c:set  var="pageNum"  value="${articlesMap.pageNum}" />
 <%
 	request.setCharacterEncoding("UTF-8");
 %>  
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	.cls1 {text-decoration:none;}
-	.cls2{margin-left:1175px; width:100px; height:32px; display:block; background:#eeeeee;
-			border:1px solid #dddddd; color:#464646; text-align:center; line-height:2; cursor:pointer;}
-	#listWrap{width:100%; height:832px;}
-	.list{width:1420px; margin:0 auto; padding-top:12%;}
-	table{margin:0 auto; margin-bottom:30px;}
-	
-</style>
+	<link rel="stylesheet" href="/project01/sub04/css/sub04.css"/>
+	<link rel="stylesheet" href="/project01/sub04/css/listArticles.css"/>
 	<meta charset="UTF-8">
 	<title>글목록창</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -34,90 +31,123 @@
 </head>
 <body>
 
-<%@ include file="../sub04/main/header.jsp" %>
+<%@ include file="./main/header.jsp" %>
 <section id="listWrap">
-<div class="list">
-<table align="center" border="1"  width="80%"  >
-	<tr height="10" align="center"  bgcolor="lightgreen">
-		<td>글번호</td>
-		<td>작성자</td>              
-		<td>제목</td>
-		<td>작성일</td>
-	</tr>
-<c:choose>
-	<c:when test="${empty articlesList }" >
-		<tr  height="10">
-			<td colspan="4">
-				<p align="center">
-					<b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
-				</p>
-			</td>  
-		</tr>
-	</c:when>
-	<c:when test="${!empty articlesList}" >
-    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
-    <tr align="center">
-		<td width="5%">${articleNum.count}</td>
-		<td width="10%">${article.id }</td>
-		<td align='left'  width="35%">
-			<span style="padding-right:30px"></span>
+	<div class="contentTitle cf">
+		<h3 class="hidden">도서관소식</h3>
+		<div class="Titlebox">
+			<div class="Librarytitle">
+				<ul class="Info">
+					<li class="title">도서관소식</li>
+					<li class="Icoimg"><a href="/project01/index.jsp"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
+					<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+					<li class="Icoimg">이용안내</li>
+					<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+					<li class="Icoimg">도서관소식</li>
+				</ul>
+				<ul class="Icon1 fr">
+					<li><a href="#"></a></li>
+				</ul>
+				<ul class="Icon2 fr">
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="contents">
+		<div class="Menubar fl">
+			<h2 class="hidden">이용안내</h2>
+			<ul>
+				<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>이용안내</span></li>
+				<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="Img2"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="IImg"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="PPImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
+			</ul>
+		</div>
+		
+		<div class="list_bg">
+		  <div class="list_tit">
+		     <div class="width100">글번호</div>
+		     <div class="width800">제목</div>              
+		     <div class="width125">작성자</div>
+		     <div class="width125">작성일</div>
+		  </div>
 			<c:choose>
-				<c:when test='${article.level > 1 }'>  
-					<c:forEach begin="1" end="${article.level }" step="1">
-						<span style="padding-left:20px"></span>    
-					</c:forEach>
-					<span style="font-size:12px;">[답변]</span>
-					<a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
-				</c:when>
-				<c:otherwise>
-					<a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
-				</c:otherwise>
-			</c:choose>
-		</td>
-		<td  width="10%"><fmt:formatDate value="${article.writeDate}" /></td> 
-	</tr>
-    </c:forEach>	
-	</c:when>
-</c:choose>	
-</table>
-<div class="cls2">
- <c:if test="${totArticles != null }" >
-      <c:choose>
-        <c:when test="${totArticles >100 }">  <!-- 글 개수가 100 초과인경우 -->
-	      <c:forEach   var="page" begin="1" end="10" step="1" >
-	         <c:if test="${section >1 && page==1 }">
-	          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section-1}&pageNum=${(section-1)*10 +1 }">&nbsp; pre </a>
-	         </c:if>
-	          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${(section-1)*10 +page } </a>
-	         <c:if test="${page ==10 }">
-	          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section+1}&pageNum=${section*10+1}">&nbsp; next</a>
-	         </c:if>
-	      </c:forEach>
-        </c:when>
-        <c:when test="${totArticles ==100 }" >  <!--등록된 글 개수가 100개인경우  -->
-	      <c:forEach   var="page" begin="1" end="10" step="1" >
-	        <a class="no-uline"  href="#">${page } </a>
-	      </c:forEach>
-        </c:when>
-        
-        <c:when test="${totArticles< 100 }" >   <!--등록된 글 개수가 100개 미만인 경우  -->
-	      <c:forEach   var="page" begin="1" end="${totArticles/10 +1}" step="1" >
-	         <c:choose>
-	           <c:when test="${page==pageNum }">
-	            <a class="sel-page"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
-	          </c:when>
-	          <c:otherwise>
-	            <a class="no-uline"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
-	          </c:otherwise>
-	        </c:choose>
-	      </c:forEach>
-        </c:when>
-      </c:choose>
-    </c:if>
-</div>    
-<br><br>
-<a  class="cls1"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a>
-</div>
+			  <c:when test="${empty articlesList}" >
+			    <div class="content">
+			      <div>
+			         <div>
+			            <b><span style="font-size:9pt; text-align:center;">등록된 글이 없습니다.</span></b>
+			        </div>
+			      </div>  
+			    </div>
+			  </c:when>
+			  <c:when test="${!empty articlesList}" >
+			    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
+			     <div class="content">
+				<%-- <div class="con_num">${articleNum.count}</div> --%>
+				<c:choose>
+				    <c:when test='${article.level > 1 }'>  
+				      
+			            <div class='con_num fl'>${article.articleNO}</div>
+			            <a class='con_tit fl' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}"><span style="font-size:12px;">[답변]</span>${article.title}</a>
+				    </c:when>
+				    <c:otherwise>
+				       <div class='con_num2 fl'>${article.articleNO}</div>
+			            <a class='con_tit2 fl' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+				    </c:otherwise>
+				</c:choose>
+				<div class="con_wri fl">${article.id }</div>
+				  <div class="con_date fl"><fmt:formatDate value="${article.writeDate}" /></div> 
+				</div>
+			    </c:forEach>
+			     </c:when>
+			    </c:choose>
+			</div>
+	</div>
+	<div class="con_page">
+	 <c:if test="${totArticles != null }" >
+	      <c:choose>
+	        <c:when test="${totArticles >100 }">  <!-- 글 개수가 100 초과인경우 -->
+		      <c:forEach   var="page" begin="1" end="10" step="1" >
+		         <c:if test="${section >1 && page==1 }">
+		          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section-1}&pageNum=${(section-1)*10 +1 }">&nbsp; pre </a>
+		         </c:if>
+		          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${(section-1)*10 +page } </a>
+		         <c:if test="${page ==10 }">
+		          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section+1}&pageNum=${section*10+1}">&nbsp; next</a>
+		         </c:if>
+		      </c:forEach>
+	        </c:when>
+	        <c:when test="${totArticles ==100 }" >  <!--등록된 글 개수가 100개인경우  -->
+		      <c:forEach   var="page" begin="1" end="10" step="1" >
+		        <a class="no-uline"  href="#">${page } </a>
+		      </c:forEach>
+	        </c:when>
+	        
+	        <c:when test="${totArticles< 100 }" >   <!--등록된 글 개수가 100개 미만인 경우  -->
+		      <c:forEach  var="page" begin="1" end="${totArticles/10 +1}" step="1" >
+		         <c:choose>
+		           <c:when test="${page==pageNum }">
+		            <a class="sel-page"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
+		          </c:when>
+		          <c:otherwise>
+		            <a class="no-uline"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
+		          </c:otherwise>
+		        </c:choose>
+		      </c:forEach>
+	        </c:when>
+	      </c:choose>
+	    </c:if>
+	</div> 
+	<div class="postWrap">
+		<a class="post fr"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a>
+	</div>
 </section>
 <%@ include file="../sub04/main/footer.jsp" %>
 </body>

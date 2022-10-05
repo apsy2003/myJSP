@@ -35,7 +35,7 @@
 				<div class="Librarytitle">
 					<ul class="Info">
 						<li class="title">도서관소식</li>
-						<li class="Icoimg"><a href="../index.html"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><a href="/project01/index.jsp"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">이용안내</li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
@@ -235,7 +235,7 @@
 							</div>
 							<div class="pageNum fl">
 								<div class="page"><a class="fNum" href="#">1</a></div>
-								<div class="page"><a href="${contextPath}/board/listArticle.do">2</a></div>
+								<div class="page"><a href="${contextPath}/board/listArticles.do">2</a></div>
 								<div class="page"><a href="#">3</a></div>
 								<div class="page"><a href="#">4</a></div>
 								<div class="page"><a href="#">5</a></div>

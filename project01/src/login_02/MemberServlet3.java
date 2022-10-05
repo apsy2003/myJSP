@@ -68,6 +68,6 @@ public class MemberServlet3 extends HttpServlet{
 	                  );	 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project01/sub02/login02.jsp'>새 회원 등록하기</a>");
+		out.print("<a href='/project01/sub02/join_finish.jsp'>새 회원 등록하기</a>");
 	}
 }

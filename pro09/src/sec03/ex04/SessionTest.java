@@ -39,7 +39,7 @@ public class SessionTest extends HttpServlet{
 				session.setAttribute("user_id", user_id);
 				out.println("<a href='login'>로그인 상태 확인</a>");
 			}else {
-				out.print("<a href='login2.thml'>다시 로그인 하세요!!</a>");
+				out.print("<a href='login2.html'>다시 로그인 하세요!!</a>");
 			}
 		}else {
 			user_id = (String) session.getAttribute("user_id");

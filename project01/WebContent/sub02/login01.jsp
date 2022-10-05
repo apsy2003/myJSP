@@ -17,7 +17,7 @@
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/sub02.js"></script>
 
-<script>
+	<script>
 		function fn_sendMember(){
 		   // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
 		   var frmMember=document.frmlogin;
@@ -47,7 +47,7 @@
 				<div class="Librarytitle">
 					<ul class="Info">
 						<li class="title">로그인</li>
-						<li class="Icoimg"><a href="#"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><a href="project01/index.jsp"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">이용안내</li>
 						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
@@ -67,10 +67,10 @@
 			<h2 class="hidden">회원정보</h2>
 				<ul>
 					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>로그인</span></li>
-					<li class="menu1"><a href="login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu1"><a href="project01/sub02/login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">아이디찾기</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="#"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="project01/sub02/login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				</ul>
 			</div>
 			<div class="mainWrap">
@@ -90,8 +90,9 @@
 									</div>
 								</div>
 								<div class="loginBtn fl">
-								<input type="submit" onClick="fn_sendMember()" id="loginbutton" title="로그인" value="로그인" class="loginbtn1"/>
-								<input  type="hidden" name="command" value="addMember" />
+								<p><a href="/project01/index2/index2.jsp">로그인</a></p>
+								<!-- <input type="submit" onClick="fn_sendMember()" id="loginbutton" title="로그인" value="로그인" class="loginbtn1"/>
+								<input  type="hidden" name="command" value="addMember" /> -->
 								
 								</div>
 							</form>

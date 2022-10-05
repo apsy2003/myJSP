@@ -1,0 +1,26 @@
+﻿/* 셋팅 */
+
+
+*{margin : 0; padding : 0;}
+form, fieldset, input, img{border : 0;}
+button{border : 0 transparent; cursor : pointer; overflow : visible; background : transparent;}
+a{text-decoration : none;}
+body{ font-family: 'Noto Sans', '맑은 고딕', 'Malgun Gothic', 'AppleGothic', sans-serif;}
+ul li{list-style : none;}
+a{text-decoration : none; color : #000000;}
+div{box-sizing: border-box;}
+.fl{float : left;}
+.fr{float : right;}
+.cb{clear : both;}
+.cf:after{content : ''; display : block; clear : both;}
+.hidden{display:none;}
+
+
+/* 팝업창 */
+
+.pop{width:630px; height:426px; background:#2ed0ce;}
+        .popupInner{background:url(../images/pop/popup_img.jpg) no-repeat top center; width:630px; height:426px; position:absolute; top:15px; left:14px; margin:0 auto;}
+        
+		
+		.pop_btn{position:absolute; toP:372px; left:393px; cursor:pointer;}
+		.pop_btn>div{margin-left:10px;}
