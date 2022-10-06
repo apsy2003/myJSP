@@ -13,29 +13,31 @@
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<link rel="stylesheet" href="css/login01.css"/>	
+	<link rel="stylesheet" href="project01/sub02/main/css/header.css"/>
 	<link rel="shortcut icon" href="../main/images/index.ico"/>
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/sub02.js"></script>
 
 	<script>
 		function fn_sendMember(){
-		   // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
+		   
 		   var frmMember=document.frmlogin;
-		   var id=frmMember.userId.value;
-		   var pwd=frmMember.userPw.value;
-		   if(id.length==0 ||id==""){
-		      alert("아이디는 필수입니다.");
-		   }else if(pwd.length==0 ||pwd==""){
-		      alert("비밀번호는 필수입니다.");
-		   }else{
-		      // 전송 방법을 post로 지정
+		   var id=frmMember.user_id.value;
+		   var pwd=frmMember.user_pwd.value;
+		   if(id.length==0 ||id=="" && pwd.length==0 ||pwd==""){
+			   alert("아이디와 비밀번호는 필수입니다.");
+		   } else if(id=="admin" && pwd=="admin"){
+			   alert("관리자로 로그인 하셨습니다.");
 		      frmMember.method="post";
-		      // 서블릿 매핑 이름을 member3으로 지정
-		      frmMember.action="/project01/member/*";
-		      // 서블릿으로 전송
+		      frmMember.action="/project01/index2/index2.jsp";
 		      frmMember.submit();
+		   }else {
+			   	alert(id+"님 환영합니다.")
+			      frmMember.method="post";
+			      frmMember.action="/project01/index2/index2.jsp";
+			      frmMember.submit();
 		   } 
-		}
+		}   
 	</script>
 </head>
 <body>
@@ -90,7 +92,7 @@
 									</div>
 								</div>
 								<div class="loginBtn fl">
-								<p><a href="/project01/index2/index2.jsp">로그인</a></p>
+								<p><a href="#" onClick="fn_sendMember()">로그인</a></p>
 								<!-- <input type="submit" onClick="fn_sendMember()" id="loginbutton" title="로그인" value="로그인" class="loginbtn1"/>
 								<input  type="hidden" name="command" value="addMember" /> -->
 								

@@ -3,9 +3,11 @@
     isELIgnored="false"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>   
+
 <%
 	request.setCharacterEncoding("UTF-8");
 %> 
+
 <!DOCTYPE html>
 <script>
 		function fn_sendMember(){
@@ -42,8 +44,8 @@
 					</div>
 					<div class="gnb2 fr">
 						<div class="admin fl">
-							<p class="userName fl"><span class="Atext"><strong>관리자(admin)</strong>님</span></p>
-							<input type="submit" onClick="fn_sendMember()" id="loginbutton" title="회원관리" value="회원관리" class="Aministration fl"/>
+								<p class="userName fl"><span class="Atext"><strong>관리자(admin)</strong>님</span></p>
+								<input type="submit" onClick="fn_sendMember()" id="loginbutton" title="회원관리" value="회원관리" class="Aministration fl"/>
 						</div>
 						<ul class="gmenu fl">
 							<li><a href="../index.jsp" tabindex="2"><fmt:message key="menu.nav49" /></a></li>

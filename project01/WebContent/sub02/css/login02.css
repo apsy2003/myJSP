@@ -13,46 +13,7 @@ div{box-sizing: border-box;}
 .cf:after{content : ''; display : block; clear : both;}
 .hidden{display:none;}
 
-/* 헤더 작업 1 */
 
-header{width:100%; height: 140px;  /* background: #00b300; */}
-	#header{width: 100%; height:140px; margin:0 auto;}
-	#gnb{width:100%; height:40px; background: #238c00; }
-	#gnb>.gnbWrap{width:1420px; height:40px; display : block; margin : 0 auto;}
-		.gnb1{width: 100px; height:40px; }
-			.gnb1>form>select{text-align:center; border : 0px; background-color : #00ac51; color : #ffffff; width : 240px; height : 40px;}
-			.gnb1>form>select>option[value="op"]{background:#ffffff; color:#555555;}
-			
-	
-			/* form[name="searchForm"]{}; */
-			
-		.gnb2{width: 370px; height:40px;}
-			.gmenu{ float:left;}
-			.gmenu>li{float:left; margin-left:10px;}
-			.gmenu>li>a{line-height:40px; font-size:0.9em; color:#ffffff;}
-			.gmenu>li>a:hover{text-decoration:underline;}
-			
-			.gsns{width:152px; margin-left:20px;}
-			.gsns>a{display:block; margin: 7px 0 0 7px; float:left;}
-			
-			
-/* 헤더 작업 2 */
-
-.nav1{width:100%; height:100px; border-bottom: 1px solid #dddddd;}
-	.sub1Wrap{width:1420px; height:100px; margin:0 auto; z-index:999999;}
-	.logo{float:left; width:240px; height:52px; margin-top:25px;}
-	.sub1{float:right; width:1120px; height:100px;}
-	.sub1_1{float:left; width:177px;  height:100px; text-align:center; }
-	.sub1_1>a{display:block; font-size:1.2em; font-weight:bold; line-height:100px;}
-	.searchbtn{float:left; margin:33px 0 0 10px;}
-	
-.nav2{width:100%; height:300px; float:right; background:#ffffff; position:absolute; border-bottom:1px solid #dddddd; z-index:999999; display : none; }
-	.sub2Wrap{width:1420px; height:267px; display : block; margin : 0 auto;}
-	.sub2Inner{width:1062px; height:267px; display : block; margin-left : 298px;}
-	.sub2{width:177px; height:300px; float: left; border-left:1px solid #dddddd; letter-spacing:-3px;}
-	.last{border-right:1px solid #dddddd;}
-	.sub2_1{ float: left; padding:20px 0 0 7px; height:300px; display:none;}
-	.sub2_2{float:left; width:177px; height:30px;}
 
 
 	/* 컨테이너 */

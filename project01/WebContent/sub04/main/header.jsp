@@ -10,8 +10,7 @@
 
 <head>
 <meta charset="UTF-8">
-	<title>header</title>
-	<link rel="stylesheet" href="main/css/header.css"/>    
+	<title>header</title>   
 </head>    
 	<header>
 	<fmt:setLocale value="${param.lo}" />
@@ -38,8 +37,8 @@
 					</div>
 					<div class="gnb2 fr">
 						<ul class="gmenu fl">
-							<li><a href="../sub02/login01.jsp" tabindex="1"><fmt:message key="menu.nav02" /></a></li>
-							<li><a href="../sub02/login02.jsp" tabindex="2"><fmt:message key="menu.nav03" /></a></li>
+							<li><a href="/project01/sub02/login01.jsp" tabindex="1"><fmt:message key="menu.nav02" /></a></li>
+							<li><a href="/project01/sub02/login02.jsp" tabindex="2"><fmt:message key="menu.nav03" /></a></li>
 							<li><a href="#" tabindex="3"><fmt:message key="menu.nav04" /></a></li>
 						</ul>
 						<ul class="gtrans fl">
@@ -74,66 +73,66 @@
 					<div class="sub2Inner">
 						<div class="sub2">
 							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="10"><fmt:message key="menu.nav7" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="11"><fmt:message key="menu.nav8" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="12"><fmt:message key="menu.nav9" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="13"><fmt:message key="menu.nav10" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="14"><fmt:message key="menu.nav11" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="10"><fmt:message key="menu.nav7" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="11"><fmt:message key="menu.nav8" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="12"><fmt:message key="menu.nav9" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="13"><fmt:message key="menu.nav10" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="14"><fmt:message key="menu.nav11" /></a></li>
 							</ul>
 						</div>
 						<div class="sub2">
 							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="16"><fmt:message key="menu.nav12" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="17"><fmt:message key="menu.nav13" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="18"><fmt:message key="menu.nav14" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="19"><fmt:message key="menu.nav15" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="20"><fmt:message key="menu.nav16" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="21"><fmt:message key="menu.nav17" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="16"><fmt:message key="menu.nav12" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="17"><fmt:message key="menu.nav13" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="18"><fmt:message key="menu.nav14" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="19"><fmt:message key="menu.nav15" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="20"><fmt:message key="menu.nav16" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="21"><fmt:message key="menu.nav17" /></a></li>
 							</ul>
 						</div>
 						<div class="sub2">
 							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="23"><fmt:message key="menu.nav18" /></a></li>
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="24"><fmt:message key="menu.nav19" /></a></li>
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="25"><fmt:message key="menu.nav20" /></a></li>
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="26"><fmt:message key="menu.nav21" /></a></li>
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="27"><fmt:message key="menu.nav22" /></a></li>
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="28"><fmt:message key="menu.nav23" /></a></li>
-								<li class="sub2_2"><a href="../sub03/sub03.jsp" tabindex="29"><fmt:message key="menu.nav24" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="23"><fmt:message key="menu.nav18" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="24"><fmt:message key="menu.nav19" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="25"><fmt:message key="menu.nav20" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="26"><fmt:message key="menu.nav21" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="27"><fmt:message key="menu.nav22" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="28"><fmt:message key="menu.nav23" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub03/sub03.jsp" tabindex="29"><fmt:message key="menu.nav24" /></a></li>
 							</ul>
 						</div>
 						<div class="sub2">
 							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="31"><fmt:message key="menu.nav25" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="32"><fmt:message key="menu.nav26" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="33"><fmt:message key="menu.nav27" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="34"><fmt:message key="menu.nav28" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="35"><fmt:message key="menu.nav29" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="36"><fmt:message key="menu.nav30" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="37"><fmt:message key="menu.nav31" /></a></li>
-								<li class="sub2_2"><a href="sub04.jsp" tabindex="38"><fmt:message key="menu.nav32" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="31"><fmt:message key="menu.nav25" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="32"><fmt:message key="menu.nav26" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="33"><fmt:message key="menu.nav27" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="34"><fmt:message key="menu.nav28" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="35"><fmt:message key="menu.nav29" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="36"><fmt:message key="menu.nav30" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="37"><fmt:message key="menu.nav31" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub04/sub04.jsp" tabindex="38"><fmt:message key="menu.nav32" /></a></li>
 							</ul>
 						</div>
 						<div class="sub2">
 							<ul class="sub2_1 fl">
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="40"><fmt:message key="menu.nav33" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="41"><fmt:message key="menu.nav34" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="42"><fmt:message key="menu.nav35" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="43"><fmt:message key="menu.nav36" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="44"><fmt:message key="menu.nav37" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="45"><fmt:message key="menu.nav38" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login01.jsp" tabindex="45"><fmt:message key="menu.nav39" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="40"><fmt:message key="menu.nav33" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="41"><fmt:message key="menu.nav34" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="42"><fmt:message key="menu.nav35" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="43"><fmt:message key="menu.nav36" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="44"><fmt:message key="menu.nav37" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="45"><fmt:message key="menu.nav38" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login01.jsp" tabindex="45"><fmt:message key="menu.nav39" /></a></li>
 							</ul>
 						</div>
 						<div class="sub2 last">
 							<ul class="sub2_1 fl ">
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="47"><fmt:message key="menu.nav40" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="48"><fmt:message key="menu.nav41" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="49"><fmt:message key="menu.nav42" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="50"><fmt:message key="menu.nav43" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="51"><fmt:message key="menu.nav44" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="52"><fmt:message key="menu.nav45" /></a></li>
-								<li class="sub2_2"><a href="../sub02/login02.jsp" tabindex="53"><fmt:message key="menu.nav46" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="47"><fmt:message key="menu.nav40" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="48"><fmt:message key="menu.nav41" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="49"><fmt:message key="menu.nav42" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="50"><fmt:message key="menu.nav43" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="51"><fmt:message key="menu.nav44" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="52"><fmt:message key="menu.nav45" /></a></li>
+								<li class="sub2_2"><a href="/project01/sub02/login02.jsp" tabindex="53"><fmt:message key="menu.nav46" /></a></li>
 							</ul>
 						</div>
 					</div>

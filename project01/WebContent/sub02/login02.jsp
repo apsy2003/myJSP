@@ -13,7 +13,7 @@
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<link rel="stylesheet" href="./css/login02.css"/>	
-
+	<link rel="stylesheet" href="project01/sub02/main/css/header2.css"/>
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/sub02.js"></script>
 <script>
@@ -24,15 +24,19 @@ function fn_sendMember(){
    var pwd=frmMember.pwd.value;
    var name=frmMember.name.value;
    var email=frmMember.email.value;
+   var emailRegExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
    if(id.length==0 ||id==""){
       alert("아이디는 필수입니다.");
    }else if(pwd.length==0 ||pwd==""){
       alert("비밀번호는 필수입니다.");
    }else if(name.length==0 ||name==""){
       alert("이름은 필수입니다.");
-   }else if(email.length==0 ||email==""){
-      alert("이메일은 필수입니다.");
-   }else{ alert("회원가입이 완료되었습니다.");
+   }else if(!emailRegExp.test(document.frmMember.email.value)){
+	   alert("이메일를 양식에 맞게 입력해주세요.");
+	   document.frmMember.email.focus();
+		return;
+   }else{ 
+	  alert("회원가입이 완료되었습니다.");
       // 전송 방법을 post로 지정
       frmMember.method="post";
       // 서블릿 매핑 이름을 member3으로 지정
@@ -109,7 +113,7 @@ function fn_sendMember(){
 								</div>
 								<div class="loginInput5">
 									<label for="userEmail" class="label5">이메일</label>
-									<input type="text" id="userEmail" name="email" placeholder="이메일"/>
+									<input type="text" id="userEmail" name="email" placeholder="example@example.com"/>
 								</div>
 							</div>
 							<div class="loginBtn fl">

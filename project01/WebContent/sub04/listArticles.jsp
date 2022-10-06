@@ -14,8 +14,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="/project01/sub04/css/sub04.css"/>
-	<link rel="stylesheet" href="/project01/sub04/css/listArticles.css"/>
+
 	<meta charset="UTF-8">
 	<title>글목록창</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -26,6 +25,8 @@
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<link rel="shortcut icon" href="../main/images/index.ico"/>
+	<link rel="stylesheet" href="/project01/sub04/main/css/header.css"/>
+	<link rel="stylesheet" href="/project01/sub04/css/listArticles.css"/>
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/sub04.js"></script>
 </head>
@@ -38,12 +39,12 @@
 		<div class="Titlebox">
 			<div class="Librarytitle">
 				<ul class="Info">
-					<li class="title">도서관소식</li>
-					<li class="Icoimg"><a href="/project01/index.jsp"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
-					<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+					<li class="title">도서관 소식</li>
+					<li class="Icoimg"><a href="/project01/index.jsp"><img src="/project01/sub04/images/ico_home.png" alt="홈버튼"/></a></li>
+					<li class="Icoimg"><img src="/project01/sub04/images/ico_naviArrow.png" alt="우측 화살표"/></li>
 					<li class="Icoimg">이용안내</li>
-					<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
-					<li class="Icoimg">도서관소식</li>
+					<li class="Icoimg"><img src="/project01/sub04/images/ico_naviArrow.png" alt="우측 화살표"/></li>
+					<li class="Icoimg">소식 게시판</li>
 				</ul>
 				<ul class="Icon1 fr">
 					<li><a href="#"></a></li>
@@ -58,15 +59,15 @@
 		<div class="Menubar fl">
 			<h2 class="hidden">이용안내</h2>
 			<ul>
-				<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>이용안내</span></li>
-				<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="Img2"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="IImg"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="PPImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
+				<li class="menutitle"><img src="/project01/sub04/images/lnb_bg.png" alt=""/><span>이용안내</span></li>
+				<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="Img2"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="/project01/sub04/images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="IImg"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="PImg"><img src="/project01/sub04/images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
+				<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="PPImg"><img src="/project01/sub04/images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
 			</ul>
 		</div>
 		
@@ -110,6 +111,7 @@
 			    </c:choose>
 			</div>
 	</div>
+<div class="page_Wrap">
 	<div class="con_page">
 	 <c:if test="${totArticles != null }" >
 	      <c:choose>
@@ -146,8 +148,9 @@
 	    </c:if>
 	</div> 
 	<div class="postWrap">
-		<a class="post fr"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a>
+		<a class="post fr"  href="${contextPath}/board/articleForm.do">글쓰기</a>
 	</div>
+</div>	
 </section>
 <%@ include file="../sub04/main/footer.jsp" %>
 </body>
