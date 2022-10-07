@@ -3,10 +3,7 @@
 <head>    
 <meta charset="UTF-8">
 	<title>footer</title>
-	<link rel="stylesheet" href="../css/login01.css"/>    
 </head>      
-    
-
 	<footer>
 		<div id="footer1" class="fl">
 			<div class="footerUp">

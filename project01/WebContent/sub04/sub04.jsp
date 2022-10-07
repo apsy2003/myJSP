@@ -19,10 +19,12 @@
 	<meta name="Author" content="박지현"/>
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
-	<link rel="stylesheet" href="css/sub04.css"/>
-	<link rel="shortcut icon" href="../main/images/index.ico"/>
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/sub04.js"></script>	
+	<link rel="stylesheet" href="/project01/sub04/css/sub04.css"/>	
+	<link rel="stylesheet" href="/project01/sub04/main/css/header.css"/>
+	<link rel="stylesheet" href="/project01/sub04/main/css/footer.css"/>
+	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
+	<script src="/project01/sub04/js/jquery-1.7.1.min.js"></script>
+	<script src="/project01/sub04/js/sub04.js"></script>
 </head>
 <body>
 
@@ -35,10 +37,10 @@
 				<div class="Librarytitle">
 					<ul class="Info">
 						<li class="title">도서관소식</li>
-						<li class="Icoimg"><a href="/project01/index.jsp"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
-						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+						<li class="Icoimg"><a href="/project01/index.jsp"><img src="/project01/sub04/images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><img src="/project01/sub04/images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">이용안내</li>
-						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+						<li class="Icoimg"><img src="/project01/sub04/images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">도서관소식</li>
 					</ul>
 					<ul class="Icon1 fr">
@@ -54,15 +56,15 @@
 			<div class="Menubar fl">
 				<h2 class="hidden">이용안내</h2>
 				<ul>
-					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>이용안내</span></li>
-					<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="Img2"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="IImg"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="PImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="PPImg"><img src="images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
+					<li class="menutitle"><img src="/project01/sub04/images/lnb_bg.png" alt=""/><span>이용안내</span></li>
+					<li class="menu1"><a href="/project01/board/listArticles.do"><span class="Text">도서관소식</span></a></li>
+					<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="PImg"><img src="/project01/sub04/images/lnb_plus_off.png" alt="PlusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="IImg"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="PImg"><img src="/project01/sub04/images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="PPImg"><img src="/project01/sub04/images/lnb_plus_off.png" alt="plusImg"/></span></a></li>
 				</ul>
 			</div>
 			<div class="Noticepage">
@@ -123,7 +125,7 @@
 								<div class="width490 fl"><a href="#">호계도서관「찾아,드림(DREAM)」 서울시립과학관 학예사 유정숙 진···</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-07</div>
 							<div class="width99 fl">56</div>
 						</div>
@@ -134,7 +136,7 @@
 								<div class="width490 fl"><a href="#">호계도서관「찾아,드림(DREAM)」 하반기 온라인 직업체험 강좌 운영···</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-07</div>
 							<div class="width99 fl">48</div>
 						</div>
@@ -156,7 +158,7 @@
 								<div class="width490 fl"><a href="#">[벌말도서관]『동화랑 퀴즈랑 놀자』 7월부터 운영 재개 안내</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-07</div>
 							<div class="width99 fl">24</div>
 						</div>
@@ -167,7 +169,7 @@
 								<div class="width490 fl"><a href="#">2022년도 만안도서관 여름방학특강(교과서 미리보기)</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-07</div>
 							<div class="width99 fl">53</div>
 						</div>
@@ -178,7 +180,7 @@
 								<div class="width490 fl"><a href="#">2022년 6월 자료를 기증하여 주신 분들</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-07</div>
 							<div class="width99 fl">12</div>
 						</div>
@@ -189,7 +191,7 @@
 								<div class="width490 fl"><a href="#">박달도서관 통합열람실 운영 안내</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-06</div>
 							<div class="width99 fl">73</div>
 						</div>
@@ -200,7 +202,7 @@
 								<div class="width490 fl"><a href="#">2022년 박달도서관 독후감상화 대회 개최</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-05</div>
 							<div class="width99 fl">77</div>
 						</div>
@@ -211,7 +213,7 @@
 								<div class="width490 fl"><a href="#">벌말도서관 온라인 여름방학 특강 운영 안내</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-05</div>
 							<div class="width99 fl">117</div>
 						</div>
@@ -222,7 +224,7 @@
 								<div class="width490 fl"><a href="#">2022년 박달도서관 여름방학 특강 안내</a></div>
 								<div class="width40 fl"></div>
 							</div>
-							<div class="width53 fl"><img src="images/ico_attach.png" alt="첨부파일이미지"/></div>
+							<div class="width53 fl"><img src="/project01/sub04/images/ico_attach.png" alt="첨부파일이미지"/></div>
 							<div class="width99 fl">2022-07-05</div>
 							<div class="width99 fl">131</div>
 						</div>

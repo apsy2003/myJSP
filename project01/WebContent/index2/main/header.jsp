@@ -48,12 +48,12 @@
 								<input type="submit" onClick="fn_sendMember()" id="loginbutton" title="회원관리" value="회원관리" class="Aministration fl"/>
 						</div>
 						<ul class="gmenu fl">
-							<li><a href="../index.jsp" tabindex="2"><fmt:message key="menu.nav49" /></a></li>
+							<li><a href="/project01/index2/sub02/login01.jsp" tabindex="2"><fmt:message key="menu.nav49" /></a></li>
 							<li><a href="#" tabindex="3"><fmt:message key="menu.nav04" /></a></li>
 						</ul>
 						<ul class="gtrans fl">
-							<li class="gfirst fl"><a href="index2.jsp?lo=ko"><fmt:message key="menu.nav47" /></a></li>
-							<li class="fl"><a href="index2.jsp?lo=en"><fmt:message key="menu.nav48" /></a></li>
+							<li class="gfirst fl"><a href="/project01/index2/index2.jsp?lo=ko"><fmt:message key="menu.nav47" /></a></li>
+							<li class="fl"><a href="/project01/index2/index2.jsp?lo=en"><fmt:message key="menu.nav48" /></a></li>
 						</ul>
 						<div class="gsns fl">
 							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="/project01/index2/images/top_snsKakao.png" alt="카카오"/></a>

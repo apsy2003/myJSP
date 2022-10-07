@@ -10,24 +10,14 @@
 <head>
    <meta charset="UTF-8">
    <title>글보기</title>
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="Generator" content="Notepad++" />
-	<meta name="Author" content="박지현"/>
-	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
-	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
-	<link rel="stylesheet" href="css/sub04.css"/>
-	<link rel="shortcut icon" href="../main/images/index.ico"/>
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/sub04.js"></script>
-   	<script  src="http://code.jquery.com/jquery-latest.min.js"></script> 
-   <link rel="stylesheet" href="/project01/sub04/css/sub04.css"/>
-   <style>
- 		 #viewWrap{width:100%; height:832px;}
-		.view{width:1420px; margin:0 auto; padding-top:12%;}
-		table{margin:0 auto; margin-bottom:30px;}
-   </style>
+	<link rel="stylesheet" href="/project01/sub04/css/viewArticle.css"/>	
+	<link rel="stylesheet" href="/project01/sub04/main/css/header.css"/>
+	<link rel="stylesheet" href="/project01/sub04/main/css/footer.css"/>
+	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
+	<script src="/project01/sub04/js/jquery-1.7.1.min.js"></script>
+	<script src="/project01/sub04/js/sub04.js"></script>
+
+
    <script  src="http://code.jquery.com/jquery-latest.min.js"></script> 
    <script type="text/javascript" >
      function backToList(obj){
@@ -92,86 +82,124 @@
 <%@ include file="../sub04/main/header.jsp" %>
 <section id="viewWrap">
 	<div class="view">
-		<form name="frmArticle" method="post"  action="${contextPath}"  enctype="multipart/form-data">
-		<table  border=0  align="center">
-			  <tr>
-			   <td width=150 align="center" bgcolor=#FF9933>
-			      글번호
-			   </td>
-			   <td >
-			    <input type="text"  value="${article.articleNO }"  disabled />
-			    <input type="hidden" name="articleNO" value="${article.articleNO}"  />
-			   </td>
-			  </tr>
-			  <tr>
-			    <td width="150" align="center" bgcolor="#FF9933">
-			      작성자 아이디
-			   </td>
-			   <td >
-			    <input type=text value="${article.id }" name="writer"  disabled />
-			   </td>
-			  </tr>
-			  <tr>
-			    <td width="150" align="center" bgcolor="#FF9933">
-			      제목 
-			   </td>
-			   <td>
-			    <input type=text value="${article.title }"  name="title"  id="i_title" disabled />
-			   </td>   
-			  </tr>
-			  <tr>
-			    <td width="150" align="center" bgcolor="#FF9933">
-			      내용
-			   </td>
-			   <td>
-			    <textarea rows="20" cols="60"  name="content"  id="i_content"  disabled />${article.content }</textarea>
-			   </td>  
-			  </tr>
-			 
-			<c:if test="${not empty article.imageFileName && article.imageFileName!='null' }">  
-			<tr>
-			    <td width="150" align="center" bgcolor="#FF9933"  rowspan="2">
-			      이미지
-			   </td>
-			   <td>
-			     <input  type= "hidden"   name="originalFileName" value="${article.imageFileName }" />
-			    <img src="${contextPath}/download.do?articleNO=${article.articleNO}&imageFileName=${article.imageFileName}" id="preview"  /><br>
-			       
-			   </td>   
-			  </tr>  
-			  <tr>
-			    <td>
-			       <input  type="file"  name="imageFileName " id="i_imageFileName"   disabled   onchange="readURL(this);"   />
-			    </td>
-			  </tr>
-			 </c:if>
-			  <tr>
-				   <td width="150" align="center" bgcolor="#FF9933">
-				      등록일자
-				   </td>
-				   <td>
-				    <input type=text value="<fmt:formatDate value="${article.writeDate}" />" disabled />
-				   </td>   
-			  </tr>
-			  <tr   id="tr_btn_modify"  >
-				   <td colspan="2"   align="center" >
-				       <input type=button value="수정반영하기"   onClick="fn_modify_article(frmArticle)"  >
-			           <input type=button value="취소"  onClick="backToList(frmArticle)">
-				   </td>   
-			  </tr>
-			    
-			  <tr  id="tr_btn"    >
-			   <td colspan="2" align="center">
-				    <input type=button value="수정하기" onClick="fn_enable(this.form)">
-				    <input type=button value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
-				    <input type=button value="리스트로 돌아가기"  onClick="backToList(this.form)">
-				     <input type=button value="답글쓰기"  onClick="fn_reply_form('${contextPath}/board/replyForm.do', ${article.articleNO})">
-			   </td>
-			  </tr>
-			 </table>
-			 </form>
-	 </div>
- </section>
+		<div class="contentTitle cf">
+			<h3 class="hidden">도서관소식</h3>
+			<div class="Titlebox">
+				<div class="Librarytitle">
+					<ul class="Info">
+						<li class="title">도서관소식</li>
+						<li class="Icoimg"><a href="/project01/index.jsp"><img src="/project01/sub04/images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><img src="/project01/sub04/images/ico_naviArrow.png" alt="우측 화살표"/></li>
+						<li class="Icoimg">게시판</li>
+						<li class="Icoimg"><img src="/project01/sub04/images/ico_naviArrow.png" alt="우측 화살표"/></li>
+						<li class="Icoimg">게시글 수정</li>
+					</ul>
+					<ul class="Icon1 fr">
+						<li><a href="#"></a></li>
+					</ul>
+					<ul class="Icon2 fr">
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="contents">
+			<div class="Menubar fl">
+				<h2 class="hidden">이용안내</h2>
+				<ul>
+					<li class="menutitle"><img src="/project01/sub04/images/lnb_bg.png" alt=""/><span>이용안내</span></li>
+					<li class="menu1"><a href="/project01/board/listArticles.do"><span class="Text">도서관소식</span></a></li>
+					<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="view_content">
+			<form name="frmArticle" method="post"  action="${contextPath}"  enctype="multipart/form-data">
+			<div class="view_tit">
+				<div class="v_number fl">
+				  <div class="v_text fl">
+				      글번호
+				  </div>
+				  <div class="number_input fl" >
+				   	<input type="text" class="num_txt" value="${article.articleNO }"  disabled />
+				   	<input type="hidden" class="num_no" name="articleNO" value="${article.articleNO}"  />
+				  </div>
+				</div>
+				<div class="v_id fl">
+				  <div class="v_user fl">
+				      작성자 아이디
+				  </div>
+				  <div class="user_input fl" >
+				    <input type=text class="user_txt" value="${article.id }" name="writer"  disabled />
+				  </div>
+				</div>
+				<div class="v_title fl">
+				    <div class="v_Tit fl">
+				  	제목 
+				    </div>
+					<div class="title_input fl">
+				    	<input type=text class="title_txt" value="${article.title }"  name="title"  id="i_title" disabled />
+				   	</div>   
+				</div>
+				<div class="v_content fl">
+				    <div class="v_con fl">
+					내용
+				   	</div>
+				  	<div class="con_size fl">
+				    	<textarea class="con_txt" name="content"  id="i_content"  disabled>${article.content }</textarea>
+				   	</div>  
+				</div>
+				 
+				<c:if test="${not empty article.imageFileName && article.imageFileName!='null' }">  
+				<div class="v_image fl">
+				    <div class="v_img fl">
+					이미지
+				   	</div>
+				   	<div class="img_input fl">
+				     	<input  type= "hidden" class="img_txt"  name="originalFileName" value="${article.imageFileName }" />
+				    	<img src="${contextPath}/download.do?articleNO=${article.articleNO}&imageFileName=${article.imageFileName}" id="preview"  /><br>
+				   	</div>   
+				</div>  
+				<div class="v_file fl">
+				    <div class="file_input fl">
+				       <input  type="file" class="file_txt" name="imageFileName " id="i_imageFileName"   disabled   onchange="readURL(this);" />
+				    </div>
+				 </div>
+				 </c:if>
+				 <div class="v_day fl">
+					<div class="v_d fl">
+					   등록일자
+					</div>
+					<div class="day_input fl">
+					   <input type=text class="day_txt" value="<fmt:formatDate value="${article.writeDate}" />" disabled />
+					</div>   
+				 </div>
+				 <div id="tr_btn_modify "  >
+					<div class="btn_input fl">
+					   <input type=button class="btn1" value="수정반영하기"   onClick="fn_modify_article(frmArticle)"  >
+				       <input type=button class="btn2" value="취소"  onClick="backToList(frmArticle)">
+					</div>   
+				  </div>
+				    
+				  <div  id="tr_btn">
+				   <div class="btn_input2 fl">
+					   <input type=button class="btn3" value="수정하기" onClick="fn_enable(this.form)">
+					   <input type=button class="btn4" value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
+					   <input type=button class="btn5" value="리스트로 돌아가기"  onClick="backToList(this.form)">
+					    <input type=button class="btn6" value="답글쓰기"  onClick="fn_reply_form('${contextPath}/board/replyForm.do', ${article.articleNO})">
+				   </div>
+				  </div>
+			</div>
+			</form>
+		 </div>
+	</div>
+</section>
  <%@ include file="../sub04/main/footer.jsp" %>
 </body>
 </html>

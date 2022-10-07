@@ -2,8 +2,7 @@
     pageEncoding="UTF-8"%>
 <head>    
 <meta charset="UTF-8">
-	<title>footer</title>
-	<link rel="stylesheet" href="css/hader.css"/>    
+	<title>footer</title>   
 </head>      
     
 

@@ -12,11 +12,12 @@
 	<meta name="Author" content="박지현"/>
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
-	<link rel="stylesheet" href="./css/join.css"/>
+	<link rel="stylesheet" href="/project01/sub02/css/join.css"/>
 	<link rel="stylesheet" href="/project01/sub02/main/css/header.css"/>	
+	<link rel="stylesheet" href="/project01/sub02/main/css/footer.css"/>	
 
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/sub02.js"></script>
+	<script src="/project01/sub02/js/jquery-1.7.1.min.js"></script>
+	<script src="/project01/sub02/js/sub02.js"></script>
 </head>
 <body>
 	<%@ include file="main/header2.jsp" %>
@@ -27,10 +28,10 @@
 				<div class="Librarytitle">
 					<ul class="Info">
 						<li class="title">회원가입</li>
-						<li class="Icoimg"><a href="#"><img src="images/ico_home.png" alt="홈버튼"/></a></li>
-						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+						<li class="Icoimg"><a href="#"><img src="/project01/sub02/images/ico_home.png" alt="홈버튼"/></a></li>
+						<li class="Icoimg"><img src="/project01/sub02/images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">회원정보</li>
-						<li class="Icoimg"><img src="images/ico_naviArrow.png" alt="우측 화살표"/></li>
+						<li class="Icoimg"><img src="/project01/sub02/images/ico_naviArrow.png" alt="우측 화살표"/></li>
 						<li class="Icoimg">회원가입</li>
 					</ul>
 					<ul class="Icon1 fr">
@@ -46,11 +47,11 @@
 			<div class="Menubar fl">
 			<h2 class="hidden">회원정보</h2>
 				<ul>
-					<li class="menutitle"><img src="images/lnb_bg.png" alt=""/><span>회원가입</span></li>
-					<li class="menu2"><a href="/project01/sub02/login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">아이디찾기</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu1"><a href="/project01/sub02/login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menutitle"><img src="/project01/sub02/images/lnb_bg.png" alt=""/><span>회원가입</span></li>
+					<li class="menu2"><a href="/project01/sub02/login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="/project01/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">아이디찾기</span><span class="Img"><img src="/project01/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="#"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="/project01/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu1"><a href="/project01/sub02/login02.jsp"><span class="Text">회원가입</span></a></li>
 				</ul>
 			</div>
 			<div class="mainWrap">

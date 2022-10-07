@@ -7,8 +7,7 @@
 	request.setCharacterEncoding("UTF-8");
 %> 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"  />
-
-	<header>
+<header>
 	<fmt:setLocale value="${param.lo}" />
 	<fmt:bundle basename="resource.member">
 		<div id="header" class="cf">
@@ -136,4 +135,4 @@
 			</nav>
 		</div>
 	</fmt:bundle>
-	</header>
+</header>

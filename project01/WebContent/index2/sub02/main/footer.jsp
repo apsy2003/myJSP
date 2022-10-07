@@ -3,11 +3,8 @@
 <head>    
 <meta charset="UTF-8">
 	<title>footer</title>
-	<link rel="stylesheet" href="main/css/header.css"/>  
 </head>      
-    
-
-	<footer>
+   	<footer>
 		<div id="footer1" class="fl">
 			<div class="footerUp">
 				<div class="fu_Wrap">

@@ -11,12 +11,14 @@
 	<meta name="Author" content="박지현"/>
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
-	<link rel="stylesheet" href="index/css/index.css"/>
-	<link rel="shortcut icon" href="index/images/index.ico"/>
-	<script src="index/js/jquery-1.7.1.min.js"></script>
-	<script src="index/js/index.js"></script>
-	<script src="index/js/weather.js"></script>
-	<script src="index/js/count.js"></script>
+	<link rel="stylesheet" href="/project01/index/css/index.css"/>
+	<link rel="stylesheet" href="/project01/main/css/header.css"/>
+	<link rel="stylesheet" href="/project01/main/css/footer.css"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
+	<script src="/project01/index/js/jquery-1.7.1.min.js"></script>
+	<script src="/project01/index/js/index.js"></script>
+	<script src="/project01/index/js/weather.js"></script>
+	<script src="/project01/index/js/count.js"></script>
 </head>
 <body onLoad="ddaycount()">
 	<div class="pop">
@@ -25,24 +27,24 @@
 			<script>ddaycount()</script>
 				<ul class="cf">
 					<li id="countD" class="firstli fl">
-						<img src="index/images/pop/num0.png" width="20" id="day100" class="fl" alt="일100의자리"/>
-						<img src="index/images/pop/num0.png" width="20" id="day10" class="fl" alt="일10의자리"/>
-						<img src="index/images/pop/num0.png" width="20" id="day1" class="fl" alt="일1의자리"/>
+						<img src="/project01/index/images/pop/num0.png" width="20" id="day100" class="fl" alt="일100의자리"/>
+						<img src="/project01/index/images/pop/num0.png" width="20" id="day10" class="fl" alt="일10의자리"/>
+						<img src="/project01/index/images/pop/num0.png" width="20" id="day1" class="fl" alt="일1의자리"/>
 						<p class="fl">일</p>
 					</li>
 					<li id="counterH" class="fl">
-						<img src="index/images/pop/num0.png" width="20" id="hour10" class="fl" alt="시간10의자리" />
-						<img src="index/images/pop/num0.png" width="20" id="hour1" class="fl" alt="시간1의자리" />
+						<img src="/project01/index/images/pop/num0.png" width="20" id="hour10" class="fl" alt="시간10의자리" />
+						<img src="/project01/index/images/pop/num0.png" width="20" id="hour1" class="fl" alt="시간1의자리" />
 						<p class="fl">시</p>
 					</li>
 					<li id="counterM" class="fl">
-						<img src="index/images/pop/num0.png" width="20" id="min10" class="fl" alt="분10의자리" />
-						<img src="index/images/pop/num0.png" width="20" id="min1" class="fl" alt="분1의자리" />
+						<img src="/project01/index/images/pop/num0.png" width="20" id="min10" class="fl" alt="분10의자리" />
+						<img src="/project01/index/images/pop/num0.png" width="20" id="min1" class="fl" alt="분1의자리" />
 						<p class="fl">분</p>
 					</li>
 					<li id="counterS" class="fl">
-						<img src="index/images/pop/num0.png" width="20" id="sec10" class="fl" alt="초10의자리" />
-						<img src="index/images/pop/num0.png" width="20" id="sec1" class="fl" alt="초1의자리" />
+						<img src="/project01/index/images/pop/num0.png" width="20" id="sec10" class="fl" alt="초10의자리" />
+						<img src="/project01/index/images/pop/num0.png" width="20" id="sec1" class="fl" alt="초1의자리" />
 						<p class="fl">초</p>
 					</li>
 				</ul>
@@ -62,12 +64,12 @@
 				<h2 class="hidden">이미지 슬라이드</h2>
 				<h2 class="slogan"><span>안양시립도서관</span><br/>지식정보화시대의 선도적 도서관으로 도약</h2>
 				<ul class="imgSlide">
-					<li class="on"><img src="index/images/bg1.jpg" alt="배경이미지1"/></li>
-					<li><img src="index/images/bg2.jpg" alt="배경이미지2"/></li>
-					<li><img src="index/images/bg3.jpg" alt="배경이미지3"/></li>
+					<li class="on"><img src="/project01/index/images/bg1.jpg" alt="배경이미지1"/></li>
+					<li><img src="/project01/index/images/bg2.jpg" alt="배경이미지2"/></li>
+					<li><img src="/project01/index/images/bg3.jpg" alt="배경이미지3"/></li>
 				</ul>
 				<div class="banner_btn">
-					<a href="#" tabindex="58"><img src="index/images/banner_img.png" alt="배너"/></a>
+					<a href="#" tabindex="58"><img src="/project01/index/images/banner_img.png" alt="배너"/></a>
 				</div>
 			</div>
 		</section>
@@ -87,7 +89,7 @@
 						<!-- <div class="searchbox"></div> -->
 						<label for="mainSearch" class="blind"></label>
 						<input type="text" title="검색어 입력" class="mainSearch" id="input3" name="searchKeyword" placeholder="검색어를 입력하세요">
-						<p class="inputBtn"><a href="#" tabindex="59"><img src="index/images/btn_search.png" alt="검색"/><span>검색</span></a></p>
+						<p class="inputBtn"><a href="#" tabindex="59"><img src="/project01/index/images/btn_search.png" alt="검색"/><span>검색</span></a></p>
 					</div>
 					<div class="filter_search fl">
 						<button>고급검색</button>
@@ -168,8 +170,8 @@
 						<li class="tab1"><a href="#" tabindex="83">호계도서관</a></li>
 						<li class="tab1"><a href="#" tabindex="84">어린이도서관</a></li>
 						<li class="tab1 fl"><a href="#" tabindex="85">벌말도서관</a></li>
-						<li class="tab2 fl"><a href="https://lib.anyang.go.kr/small/index.do" tabindex="86"><img src="index/images/ico_small.png" alt="작은도서관" onclick="window.open"/><span>작은도서관</span></a></li>
-						<li class="tab2_1 fr"><a href="http://elib.anyang.go.kr:8080/ebookPlatform/digitalLibrary/main.do" tabindex="87" onclick="window.open"><img src="index/images/ico_elib.png" alt="전자도서관"/><span>전자도서관</span></a></li>
+						<li class="tab2 fl"><a href="https://lib.anyang.go.kr/small/index.do" tabindex="86"><img src="/project01/index/images/ico_small.png" alt="작은도서관" onclick="window.open"/><span>작은도서관</span></a></li>
+						<li class="tab2_1 fr"><a href="http://elib.anyang.go.kr:8080/ebookPlatform/digitalLibrary/main.do" tabindex="87" onclick="window.open"><img src="/project01/index/images/ico_elib.png" alt="전자도서관"/><span>전자도서관</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -178,112 +180,112 @@
 					<ul class="main_con1">
 						<li class="ctitle fl"><span class="big">석수도서관</span><span class="small">(다문화/실버)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 동편로 124(관양동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 동편로 124(관양동)<br/>
 						[열람실] 평일 07시~23시/주말x 07시~23시<br/>
 						[관외대출실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
 					</ul>
 					<ul class="con2">
 						<li class="ctitle fl"><span class="big">만안도서관</span><span class="small">(생활과학/사회복지)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 만안구 냉천로 51(안양동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 만안구 냉천로 51(안양동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
 					</ul>
 					<ul class="con3">
 						<li class="ctitle fl"><span class="big">삼덕도서관</span><span class="small">(청소년)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 만안구 병목안로 58(안양동714-94)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 만안구 병목안로 58(안양동714-94)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
 					</ul>
 					<ul class="con4">
 						<li class="ctitle fl"><span class="big">박달도서관</span><span class="small">(심리/인성)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 만안구 박달로 459(박달동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 만안구 박달로 459(박달동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
 					</ul>
 					<ul class="con5">
 						<li class="ctitle fl"><span class="big">평촌도서관</span><span class="small">(경제/교육)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 관평로 213(관양동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 관평로 213(관양동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
 					</ul>
 					<ul class="con6">
 						<li class="ctitle fl"><span class="big">관양도서관</span><span class="small">(IT/웹툰)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 동편로 124(관양동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 동편로 124(관양동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[제1종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
 					</ul>
 					<ul class="con7">
 						<li class="ctitle fl"><span class="big">비산도서관</span><span class="small">(미술/음악)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 관악대로 123(비산동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 관악대로 123(비산동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
 					</ul>
 					<ul class="con8">
 						<li class="ctitle fl"><span class="big">호계도서관</span><span class="small">(문학상수상작/한국수필)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 경수대로685번길 26(호계동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 경수대로685번길 26(호계동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~17시<br/>
 						[기타자료실(전자자료실 등x)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
 					</ul>
 					<ul class="con9">
 						<li class="ctitle fl"><span class="big">어린이도서관</span><span class="small">(영/유아(북스타트))</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 동안로 66(호계동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 동안로 66(호계동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[제1종합자료실] 평일 09시~22시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>평일(화~금) 10시~19시/ 주말(토~일) 10시~17시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>평일(화~금) 10시~19시/ 주말(토~일) 10시~17시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 월요일</span></li>
 					</ul>
 					<ul class="con10">
 						<li class="ctitle fl"><span class="big">벌말도서관</span><span class="small">(여행/지리)</span></li>
 						<li class="cBtn fr"><a href="#" tabindex="88">바로가기</a></li>
-						<li class="cTime1 fl"><img src="index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 흥안대로 434번길 19-27(평촌동)<br/>
+						<li class="cTime1 fl"><img src="/project01/index/images/ico_libInfo_01.png" alt="위치"/>안양시 동안구 흥안대로 434번길 19-27(평촌동)<br/>
 						[열람실] 평일 07시~23시/주말 07시~23시<br/>
 						[종합자료실] 평일 09시~20시/주말 09시~17시</li>
-						<li class="cTime2 fl"><img src="index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~18시<br/>
+						<li class="cTime2 fl"><img src="/project01/index/images/ico_libInfo_02.png" alt="시간"/>[어린이실]평일 09시~18시/ 주말 09시~18시<br/>
 						[기타자료실(전자자료실 등)]<br/>
 						평일 09시~18시/주말09시~17시<br/>
-						<span class="cDay"><img src="index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
+						<span class="cDay"><img src="/project01/index/images/ico_libInfo_05.png" alt="달력"/>매주 금요일</span></li>
 					</ul>					
 				</div>
 			</div>
@@ -295,14 +297,14 @@
 			<h3 class="hidden">콘텐츠 배너</h3>
 				<div class="conbannerWrap">
 					<ul class="con_banner2 cf">
-						<li class="con_first"><a href="#" tabindex="97"><img src="index/images/banner1.jpg" height="390" width="440" alt="콘텐츠배너1"/></a></li>
-						<li class="con_B"><a href="#" tabindex="98"><img src="index/images/banner2.jpg" height="390" width="440" alt="콘텐츠배너2"/></a></li>
-						<li class="con_B"><a href="#" tabindex="99"><img src="index/images/banner3.jpg" height="390" width="440" alt="콘텐츠배너3"/></a></li>
-						<li class="con_B"><a href="#" tabindex="100"><img src="index/images/banner4.jpg" height="390" width="440" alt="콘텐츠배너4"/></a></li>
-						<li class="con_B"><a href="#" tabindex="101"><img src="index/images/banner5.jpg" height="390" width="440"  alt="콘텐츠배너5"/></a></li>
-						<li class="con_B"><a href="#" tabindex="102"><img src="index/images/banner6.jpg" height="390" width="440" alt="콘텐츠배너6"/></a></li>
-						<li class="con_B"><a href="#" tabindex="103"><img src="index/images/banner7.jpg" height="390" width="440" alt="콘텐츠배너7"/></a></li>
-						<li class="con_B"><a href="#" tabindex="104"><img src="index/images/banner8.jpg" height="390" width="440" alt="콘텐츠배너8"/></a></li>
+						<li class="con_first"><a href="#" tabindex="97"><img src="/project01/index/images/banner1.jpg" height="390" width="440" alt="콘텐츠배너1"/></a></li>
+						<li class="con_B"><a href="#" tabindex="98"><img src="/project01/index/images/banner2.jpg" height="390" width="440" alt="콘텐츠배너2"/></a></li>
+						<li class="con_B"><a href="#" tabindex="99"><img src="/project01/index/images/banner3.jpg" height="390" width="440" alt="콘텐츠배너3"/></a></li>
+						<li class="con_B"><a href="#" tabindex="100"><img src="/project01/index/images/banner4.jpg" height="390" width="440" alt="콘텐츠배너4"/></a></li>
+						<li class="con_B"><a href="#" tabindex="101"><img src="/project01/index/images/banner5.jpg" height="390" width="440"  alt="콘텐츠배너5"/></a></li>
+						<li class="con_B"><a href="#" tabindex="102"><img src="/project01/index/images/banner6.jpg" height="390" width="440" alt="콘텐츠배너6"/></a></li>
+						<li class="con_B"><a href="#" tabindex="103"><img src="/project01/index/images/banner7.jpg" height="390" width="440" alt="콘텐츠배너7"/></a></li>
+						<li class="con_B"><a href="#" tabindex="104"><img src="/project01/index/images/banner8.jpg" height="390" width="440" alt="콘텐츠배너8"/></a></li>
 					</ul>
 					<!-- <div class="con_button cf">
 						<span class="left fl"><button></button></span>
@@ -316,16 +318,16 @@
 				<div class="con_notice">
 						<div class="notice_title">
 							<dt>공지사항</dt>
-							<dd><a href="sub04/sub04.jsp"><img src="index/images/ico_more.png" width="15" height="15" alt="메뉴바"/></a></dd>
+							<dd><a href="/project01/sub04/sub04.jsp"><img src="/project01/index/images/ico_more.png" width="15" height="15" alt="메뉴바"/></a></dd>
 						</div>
 						<ul class="notice_view">
-							<li class="notice_first"><a href="sub04/sub04.jsp" tabindex="106"><span class="A">[공통]</span>안양어린이도서관 북스타트 책놀이-데이···</a></li>
-							<li><a href="sub04/sub04.jsp" tabindex="107"><span class="B">[만안]</span>[모집중] 여름방학특강(교과서 미리보기)···</a></li>
-							<li><a href="sub04/sub04.jsp" tabindex="108"><span class="C">[벌말]</span>[벌말도서관] 2022년 8월 자원봉사자 모집···</a></li>
-							<li><a href="sub04/sub04.jsp" tabindex="109"><span class="C">[벌말]</span>벌말도서관 가족과 함께하는 '작은 영화관'···</a></li>
-							<li><a href="sub04/sub04.jsp" tabindex="110"><span class="D">[평촌]</span>[마감]평촌도서관,개인을 위한 두배···</a></li>
-							<li><a href="sub04/sub04.jsp" tabindex="111"><span class="E">[관양]</span>2022년 관양도서관 여름방학특강 운영 안내</a></li>
-							<li><a href="sub04/sub04.jsp" tabindex="112"><span class="F">[비산]</span>2022년 6월 자료를 기증하여 주신 분들</a></li>
+							<li class="notice_first"><a href="/project01/sub04/sub04.jsp" tabindex="106"><span class="A">[공통]</span>안양어린이도서관 북스타트 책놀이-데이···</a></li>
+							<li><a href="/project01/sub04/sub04.jsp" tabindex="107"><span class="B">[만안]</span>[모집중] 여름방학특강(교과서 미리보기)···</a></li>
+							<li><a href="/project01/sub04/sub04.jsp" tabindex="108"><span class="C">[벌말]</span>[벌말도서관] 2022년 8월 자원봉사자 모집···</a></li>
+							<li><a href="/project01/sub04/sub04.jsp" tabindex="109"><span class="C">[벌말]</span>벌말도서관 가족과 함께하는 '작은 영화관'···</a></li>
+							<li><a href="/project01/sub04/sub04.jsp" tabindex="110"><span class="D">[평촌]</span>[마감]평촌도서관,개인을 위한 두배···</a></li>
+							<li><a href="/project01/sub04/sub04.jsp" tabindex="111"><span class="E">[관양]</span>2022년 관양도서관 여름방학특강 운영 안내</a></li>
+							<li><a href="/project01/sub04/sub04.jsp" tabindex="112"><span class="F">[비산]</span>2022년 6월 자료를 기증하여 주신 분들</a></li>
 						</ul>
 				</div>
 			</article>
@@ -335,7 +337,7 @@
 					<span class="today_title">도서관 날씨</span>
 					<div class="black_alpha">
 						<div class="weather_icon_bg cf">
-							<img class="today_weather_icon fl" src="index/images/weather/01d.png" alt="오늘 날씨 이미지"/>
+							<img class="today_weather_icon fl" src="/project01/index/images/weather/01d.png" alt="오늘 날씨 이미지"/>
 							<span class="today_temp_text fl">12.75&#8451;</span>
 						</div>
 						<div class="weather_text_box cf">
@@ -557,7 +559,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="137">
-									<img src="index/images/book1.jpg" width="190" height="240" alt="불편한 편의점"/>
+									<img src="/project01/index/images/book1.jpg" width="190" height="240" alt="불편한 편의점"/>
 									<p>불편한 편의점:김호연 장···</p>
 								</a>
 							</li>
@@ -565,7 +567,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="138">
-									<img src="index/images/book2.jpg" width="190" height="240" alt="달러구트"/>
+									<img src="/project01/index/images/book2.jpg" width="190" height="240" alt="달러구트"/>
 									<p>달러구트 꿈 백화점.이미···</p>
 								</a>
 							</li>
@@ -573,7 +575,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="139">
-									<img src="index/images/book3.jpg" width="190" height="240" alt="아몬드"/>
+									<img src="/project01/index/images/book3.jpg" width="190" height="240" alt="아몬드"/>
 									<p>아몬드:손원평 장···</p>
 								</a>
 							</li>
@@ -581,7 +583,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="140">
-									<img src="index/images/book4.jpg" width="190" height="240" alt="파친코"/>
+									<img src="/project01/index/images/book4.jpg" width="190" height="240" alt="파친코"/>
 									<p>파친코:이민진 장···</p>
 								</a>
 							</li>
@@ -589,7 +591,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="141">
-									<img src="index/images/book5.jpg" width="190" height="240" alt="어서오세요"/>
+									<img src="/project01/index/images/book5.jpg" width="190" height="240" alt="어서오세요"/>
 									<p>어서오세요,휴남동 서점···</p>
 								</a>
 							</li>
@@ -599,7 +601,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="142">
-									<img src="index/images/book6.jpg" width="190" height="240" alt="소란스러운 동거"/>
+									<img src="/project01/index/images/book6.jpg" width="190" height="240" alt="소란스러운 동거"/>
 									<p>소란스러운 동거</p>
 								</a>
 							</li>
@@ -607,7 +609,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="143">
-									<img src="index/images/book7.jpg" width="190" height="240" alt="오늘 내 기분은 철학으로"/>
+									<img src="/project01/index/images/book7.jpg" width="190" height="240" alt="오늘 내 기분은 철학으로"/>
 									<p>오늘 내 기분은 철학으로···</p>
 								</a>
 							</li>
@@ -615,7 +617,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="144">
-									<img src="index/images/book8.jpg" width="190" height="240" alt="움직이는 역사 박물관"/>
+									<img src="/project01/index/images/book8.jpg" width="190" height="240" alt="움직이는 역사 박물관"/>
 									<p>움직이는 역사 박물관</p>
 								</a>
 							</li>
@@ -623,7 +625,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="145">
-									<img src="index/images/book9.jpg" width="190" height="240" alt="(당신이 잘 안다고 착각하"/>
+									<img src="/project01/index/images/book9.jpg" width="190" height="240" alt="(당신이 잘 안다고 착각하"/>
 									<p>(당신이 잘 안다고 착각하···</p>
 								</a>
 							</li>
@@ -631,7 +633,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="146">
-									<img src="index/images/book10.jpg" width="190" height="240" alt="때려치우기의 기술"/>
+									<img src="/project01/index/images/book10.jpg" width="190" height="240" alt="때려치우기의 기술"/>
 									<p>때려치우기의 기술</p>
 								</a>
 							</li>
@@ -641,7 +643,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="147">
-									<img src="index/images/book11.jpg" width="190" height="240" alt="낙인 "/>
+									<img src="/project01/index/images/book11.jpg" width="190" height="240" alt="낙인 "/>
 									<p>낙인 </p>
 								</a>
 							</li>
@@ -649,7 +651,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="148">
-									<img src="index/images/book12.jpg" width="190" height="240" alt="풀들이살찔때"/>
+									<img src="/project01/index/images/book12.jpg" width="190" height="240" alt="풀들이살찔때"/>
 									<p>풀들이 살찔 때 : 양윤덕 시···</p>
 								</a>
 							</li>
@@ -657,7 +659,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="149">
-									<img src="index/images/book13.jpg" width="190" height="240" alt="타래실: 주미경 수필집"/>
+									<img src="/project01/index/images/book13.jpg" width="190" height="240" alt="타래실: 주미경 수필집"/>
 									<p>타래실: 주미경 수필집</p>
 								</a>
 							</li>
@@ -665,7 +667,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="150">
-									<img src="index/images/book14.jpg" width="190" height="240" alt="아몬드"/>
+									<img src="/project01/index/images/book14.jpg" width="190" height="240" alt="아몬드"/>
 									<p>아몬드 : 100만 부 기념 특···</p>
 								</a>
 							</li>
@@ -673,7 +675,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="151">
-									<img src="index/images/book15.jpg" width="190" height="240" alt="시경집전변정. 4"/>
+									<img src="/project01/index/images/book15.jpg" width="190" height="240" alt="시경집전변정. 4"/>
 									<p>시경집전변정. 4</p>
 								</a>
 							</li>
@@ -683,7 +685,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="147">
-									<img src="index/images/book16.jpg" width="190" height="240" alt="양순이네 떡집"/>
+									<img src="/project01/index/images/book16.jpg" width="190" height="240" alt="양순이네 떡집"/>
 									<p>양순이네 떡집</p>
 								</a>
 							</li>
@@ -691,7 +693,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="148">
-									<img src="index/images/book17.jpg" width="190" height="240" alt="알사탕"/>
+									<img src="/project01/index/images/book17.jpg" width="190" height="240" alt="알사탕"/>
 									<p>알사탕</p>
 								</a>
 							</li>
@@ -699,7 +701,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="149">
-									<img src="index/images/book18.jpg" width="190" height="240" alt="엉덩이 탐정"/>
+									<img src="/project01/index/images/book18.jpg" width="190" height="240" alt="엉덩이 탐정"/>
 									<p>추리 천재 엉덩이 탐정. 1,···</p>
 								</a>
 							</li>
@@ -707,7 +709,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="150">
-									<img src="index/images/book19.jpg" width="190" height="240" alt="그리스로마신화"/>
+									<img src="/project01/index/images/book19.jpg" width="190" height="240" alt="그리스로마신화"/>
 									<p>그리스 로마 신화: 만화로···</p>
 								</a>
 							</li>
@@ -715,7 +717,7 @@
 						<ul class="book fl">
 							<li>
 								<a href="#" tabindex="151">
-									<img src="index/images/book20.jpg" width="190" height="240" alt="엉덩이 탐정"/>
+									<img src="/project01/index/images/book20.jpg" width="190" height="240" alt="엉덩이 탐정"/>
 									<p>(추리 천재)엉덩이 탐정.···</p>
 								</a>
 							</li>

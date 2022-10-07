@@ -32,7 +32,6 @@ INDEX VERSION 1.131+C:\myJSP\workspace\.metadata\.plugins\org.eclipse.jdt.core
 1443405549.index
 391466310.index
 351485023.index
-3782449823.index
 1161557395.index
 3195585612.index
 3635630337.index
@@ -75,7 +74,6 @@ INDEX VERSION 1.131+C:\myJSP\workspace\.metadata\.plugins\org.eclipse.jdt.core
 983525403.index
 2703085184.index
 737672456.index
-2612251135.index
 1641395582.index
 832754449.index
 1968797492.index

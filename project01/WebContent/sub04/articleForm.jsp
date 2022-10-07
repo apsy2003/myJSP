@@ -32,10 +32,11 @@
  <title>새글 쓰기 창</title>
  
  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
- 	<link rel="stylesheet" href="/project01/sub04/main/css/header.css"/>
-	<link rel="stylesheet" href="/project01/sub04/css/articleForm.css"/>
+ 		<link rel="stylesheet" href="/project01/sub04/css/articleForm.css"/>	
+	<link rel="stylesheet" href="/project01/sub04/main/css/header.css"/>
+	<link rel="stylesheet" href="/project01/sub04/main/css/footer.css"/>
 	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
-	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="/project01/sub04/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub04/js/sub04.js"></script>
 
 </head>
@@ -68,8 +69,8 @@
 			<h2 class="hidden">이용안내</h2>
 			<ul>
 				<li class="menutitle"><img src="/project01/sub04/images/lnb_bg.png" alt=""/><span>이용안내</span></li>
-				<li class="menu1"><a href="#"><span class="Text">도서관소식</span><span class="IImg"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-				<li class="menu2"><a href="#"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+				<li class="menu1"><a href="/project01/board/listArticles.do"><span class="Text">도서관소식</span></a></li>
+				<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>

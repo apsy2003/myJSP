@@ -49,11 +49,11 @@
 	<meta name="Keywords" content="박지현, ParkJiHyun, 포트폴리오, 박지현 포트폴리오, portfolio, JiHyun's portfolio, 프로젝트, Project, 박 지현, 박 지 현, 지현 박, 지현, rla, xo, dud, xodud, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<link rel="stylesheet" href="/project01/sub02/main/css/header.css"/>
+	<link rel="stylesheet" href="/project01/sub02/main/css/footer.css"/>
 	<link rel="stylesheet" href="/project01/sub02/css/listMembers.css"/>
 	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
-	<script src="${contextPath}/sub02/js/jquery-1.7.1.min.js"></script>
-	<script src="${contextPath}/sub02/js/sub02.js"></script>
-	
+	<script src="/project01/sub02/js/jquery-1.7.1.min.js"></script>
+	<script src="/project01/sub02/js/sub02.js"></script>
 </head>
 <body>
 <%@ include file="./main/header.jsp" %>
@@ -87,7 +87,7 @@
 					<li class="menutitle"><img src="/project01/sub02/images/lnb_bg.png" alt=""/><span>회원정보</span></li>
 					<li class="menu2"><a href="/project01/sub02/login01.jsp"><span class="Text">회원로그인</span><span class="Img"><img src="/project01/sub02/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="/project01/sub02/login02.jsp"><span class="Text">회원가입</span><span class="Img"><img src="/project01/sub02/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu1"><a href="#"><span class="Text">회원관리</span><span class="Img2"><img src="/project01/sub02/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu1"><a href="/project01/member/listMembers.do"><span class="Text">회원관리</span></a></li>
 					<li class="menu2"><a href="/project01/index2/sub04/sub04.jsp"><span class="Text">도서관소식</span><span class="Img"><img src="/project01/sub02/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu2"><a href="/project01/index2/sub03/sub03.jsp"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub02/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				</ul>

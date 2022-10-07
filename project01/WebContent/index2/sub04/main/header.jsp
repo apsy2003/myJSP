@@ -10,8 +10,7 @@
 
 <head>
 <meta charset="UTF-8">
-	<title>header</title>
-	<link rel="stylesheet" href="main/css/header.css"/>    
+	<title>header</title>   
 </head>    
 	<header>
 	<fmt:setLocale value="${param.lo}" />
@@ -42,7 +41,7 @@
 							<input type="submit" onClick="fn_sendMember()" id="loginbutton" title="회원관리" value="회원관리" class="Aministration fl"/>
 						</div>
 						<ul class="gmenu fl">
-							<li><a href="/project01/index2/index2.jsp" tabindex="2"><fmt:message key="menu.nav49" /></a></li>
+							<li><a href="/project01/sub02/login01.jsp" tabindex="1"><fmt:message key="menu.nav49" /></a></li>
 							<li><a href="#" tabindex="3"><fmt:message key="menu.nav04" /></a></li>
 						</ul>
 						<ul class="gtrans fl">
@@ -53,14 +52,14 @@
 							<a href="https://pf.kakao.com/_MxfxkLT" tabindex="4"><img src="/project01/index2/sub04/main/images/top_snsKakao.png" alt="카카오"/></a>
 							<a href="https://www.instagram.com/anyanglib/" tabindex="5"><img src="/project01/index2/sub04/main/images/top_snsInsta.png" alt="인스타"/></a>
 							<a href="https://twitter.com/anyanglib" tabindex="6"><img src="/project01/index2/sub04/main/images/top_snsTwitter.png" alt="트위터"/></a>
-							<a href="https://www.youtube.com/channel/UCOTyiNx6Di5A_Yn4SrzNMzg" tabindex="7"><img src="/project01/sub04/main/images/top_snsYoutube.png" alt="유튜브"/></a>
+							<a href="https://www.youtube.com/channel/UCOTyiNx6Di5A_Yn4SrzNMzg" tabindex="7"><img src="/project01/index2/sub04/main/images/top_snsYoutube.png" alt="유튜브"/></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<nav class="nav1 cf">
 				<div class="sub1Wrap">
-					<h1 class="logo fl"><a href="/project01/index2/index2.jsp" tabindex="8"><img src="/project01/sub04/main/images/logo.png" alt="로고"/></a></h1>
+					<h1 class="logo fl"><a href="/project01/index2/index2.jsp" tabindex="8"><img src="/project01/index2/sub04/main/images/logo.png" alt="로고"/></a></h1>
 					<ul class="sub1 cf">
 						<li class="sub1_1 fl"><a href="/project01/index2/sub02/login01.jsp" tabindex="9"><fmt:message key="menu.nav1" /></a></li>
 						<li class="sub1_1 fl"><a href="/project01/index2/sub02/login02.jsp" tabindex="9"><fmt:message key="menu.nav2" /></a></li>
