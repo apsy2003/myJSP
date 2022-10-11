@@ -108,7 +108,7 @@
 			    </c:choose>
 			</div>
 	</div>
-<div class="page_Wrap"> 
+<!-- <div class="page_Wrap"> --> 
 	<div class="con_page">
 		 <c:if test="${totArticles != null }" >
 	      <c:choose>
@@ -143,11 +143,11 @@
 	        </c:when>
 	      </c:choose>
 	    </c:if>
+		<div class="postWrap">
+			<a class="post fr"  href="${contextPath}/board/articleForm.do">글쓰기</a>
+		</div>
 	</div> 
-	<div class="postWrap">
-		<a class="post fr"  href="${contextPath}/board/articleForm.do">글쓰기</a>
-	</div>
-</div>
+	<!-- </div> -->
 </section>
 <%@ include file="../sub04/main/footer.jsp" %>
 </body>
