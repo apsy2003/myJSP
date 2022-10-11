@@ -92,12 +92,12 @@
 				<c:choose>
 				    <c:when test='${article.level > 1 }'>  
 				      
-			            <div class='con_num fl'>${article.articleNO}</div>
-			            <a class='con_tit fl' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}"><span class="response" style="font-size:12px;">[답변]</span>${article.title}</a>
+			            <div class='con_num fl'>${articleNum.count}</div>
+			            <a class='con_tit fl' href="${contextPath}/board/viewArticle.do?articleNO=${articleNum.count}"><span class="response" style="font-size:12px;">[답변]</span>${article.title}</a>
 				    </c:when>
 				    <c:otherwise>
-				       <div class='con_num2 fl'>${article.articleNO}</div>
-			            <a class='con_tit2 fl' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+				       <div class='con_num2 fl'>${articleNum.count}</div>
+			            <a class='con_tit2 fl' href="${contextPath}/board/viewArticle.do?articleNO=${articleNum.count}">${article.title}</a>
 				    </c:otherwise>
 				</c:choose>
 				<div class="con_wri fl">${article.id }</div>
@@ -108,7 +108,7 @@
 			    </c:choose>
 			</div>
 	</div>
-<div class="page_Wrap">
+<div class="page_Wrap"> 
 	<div class="con_page">
 		 <c:if test="${totArticles != null }" >
 	      <c:choose>
@@ -147,7 +147,7 @@
 	<div class="postWrap">
 		<a class="post fr"  href="${contextPath}/board/articleForm.do">글쓰기</a>
 	</div>
-</div>	
+</div>
 </section>
 <%@ include file="../sub04/main/footer.jsp" %>
 </body>

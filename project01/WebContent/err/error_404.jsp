@@ -16,7 +16,7 @@
 <body>
 	<%@ include file="../main/error.jsp" %>
 	<section id=imgbg>
-		<img src="../images/404.png" class="img" />
+		<img src="project01/images/404.png" class="img" />
 	</section>
 	<%@ include file="../main/footer.jsp" %>
 </body>
