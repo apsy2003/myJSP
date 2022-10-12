@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/project01/index2/css/index2.css"/>
 	<link rel="stylesheet" href="/project01/index2/main/css/header.css"/>
 	<link rel="stylesheet" href="/project01/index2/css/footer.css"/>
-	<link rel="shortcut icon" href="/project01/index2/images/index.ico"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/index2/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/index2/js/index.js"></script>
 	<script src="/project01/index2/js/weather.js"></script>

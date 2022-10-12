@@ -21,7 +21,7 @@
  	<link rel="stylesheet" href="/project01/sub04/css/listArticles.css"/>	
 	<link rel="stylesheet" href="/project01/sub04/main/css/header.css"/>
 	<link rel="stylesheet" href="/project01/sub04/main/css/footer.css"/>
-	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/sub04/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub04/js/sub04.js"></script>
 
@@ -107,7 +107,6 @@
 			     </c:when>
 			    </c:choose>
 			</div>
-	</div>
 <!-- <div class="page_Wrap"> --> 
 	<div class="con_page">
 		 <c:if test="${totArticles != null }" >
@@ -143,10 +142,11 @@
 	        </c:when>
 	      </c:choose>
 	    </c:if>
-		<div class="postWrap">
+	</div>
+	<div class="postWrap">
 			<a class="post fr"  href="${contextPath}/board/articleForm.do">글쓰기</a>
-		</div>
 	</div> 
+</div>	
 	<!-- </div> -->
 </section>
 <%@ include file="../sub04/main/footer.jsp" %>

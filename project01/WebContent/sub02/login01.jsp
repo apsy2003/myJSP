@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="/project01/sub02/css/login01.css"/>	
 	<link rel="stylesheet" href="/project01/sub02/main/css/header.css"/>
 	<link rel="stylesheet" href="/project01/sub02/main/css/footer.css"/>
-	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/sub02/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub02/js/sub02.js"></script>
 
@@ -27,7 +27,7 @@
 		   var pwd=frmMember.user_pwd.value;
 		   if(id.length==0 ||id=="" && pwd.length==0 ||pwd==""){
 			   alert("아이디와 비밀번호는 필수입니다.");
-		   } else if(id=="admin" && pwd=="admin"){
+		   } else if(id=="admin" && pwd=="ay2111!!"){
 			   alert("관리자로 로그인 하셨습니다.");
 		      frmMember.method="post";
 		      frmMember.action="/project01/index2/index2.jsp";
@@ -89,7 +89,7 @@
 										<input type="text" id="userId" name="user_id" placeholder="아이디" value="admin" />
 									</div>
 									<div class="loginInput2">
-										<input type="password" id="userPw" name="user_pwd" placeholder="비밀번호" value="admin" />
+										<input type="password" id="userPw" name="user_pwd" placeholder="비밀번호" value="ay2111!!" />
 									</div>
 								</div>
 								<div class="loginBtn fl">

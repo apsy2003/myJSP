@@ -51,7 +51,7 @@
 	<link rel="stylesheet" href="/project01/sub02/main/css/header.css"/>
 	<link rel="stylesheet" href="/project01/sub02/main/css/footer.css"/>
 	<link rel="stylesheet" href="/project01/sub02/css/listMembers.css"/>
-	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/sub02/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub02/js/sub02.js"></script>
 </head>

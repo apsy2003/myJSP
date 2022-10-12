@@ -23,7 +23,7 @@
 	<meta name="Description" content="박지현의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />	
 	<link rel="stylesheet" href="/project01/sub02/main/css/header.css"/>
 	<link rel="stylesheet" href="/project01/sub02/main/css/footer.css"/>
-	<link rel="shortcut icon" href="/project01/main/images/index.ico"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/sub02/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub02/js/sub02.js"></script>
 	

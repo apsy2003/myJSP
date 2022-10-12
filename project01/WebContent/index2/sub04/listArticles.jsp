@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/project01/index2/sub04/css/listArticles.css"/>	
 	<link rel="stylesheet" href="/project01/index2/sub04/main/css/header.css"/>
 	<link rel="stylesheet" href="/project01/index2/sub04/main/css/footer.css"/>
-	<link rel="shortcut icon" href="/project01/index2/main/images/index.ico"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/index2/sub04/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/index2/sub04/js/sub04.js"></script>
 

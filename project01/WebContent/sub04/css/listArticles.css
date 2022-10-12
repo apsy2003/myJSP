@@ -31,7 +31,7 @@ div{box-sizing: border-box;}
 .Icon2>li{background-image: url(../images/ico_sns.png); background-repeat: no-repeat; background-position: 0px 0px; width: 40px; height: 40px; margin: 0 auto;}
 	
 /* 메뉴바작업 */
-.contents{width:1420px; margin:0 auto; margin-bottom: 60px; display:block;}
+.contents{width:1420px; margin:0 auto; margin-bottom: 60px; display:block; position:relative;}
 	.Menubar{width:240px; height:720px; z-index:1; margin-top:-194px;}
 		.menutitle{width:240px; height:142px; background:#6b64be; color:#ffffff; position:relative; border:2px solide #3d3884; box-sizing:border-box;}
 		.menutitle>img{margin-top:30px;}
@@ -67,9 +67,9 @@ div{box-sizing: border-box;}
 /* page */
 
 /* .page_Wrap{ } */
-.con_page{position:relative; margin-bottom:80px; display:block; height:30px; margin-left:1134px;}
-.con_page>a{display:block; float:left; width:30px; height:30px; background:#dddddd; color:#555555; font-size:12px; text-align:center; line-height:30px; margin-left:20px;}
+.con_page{ margin-bottom:80px; display:block; height:30px;}
+.con_page>a{display:block; float:left; width:30px; height:30px; background:#dddddd; color:#555555; font-size:12px; text-align:center; line-height:30px; margin: 50px 0 0 756px;}
 
 /* post */
-.postWrap{display:block; width : 1420px; display :block; margin : 0 auto; position:absolute; bottom:2px; right:481px;} 
-.post{display:block; padding:8px 20px; text-align:center; font-size:12px; background:#3d3884; color:#ffffff; text-align:center;} 
+.postWrap{display:block; width : 1420px; margin : 0 auto;} 
+.post{ position:absolute; right:0; bottom:-52px; display:block; padding:8px 20px; text-align:center; font-size:12px; background:#3d3884; color:#ffffff; text-align:center; } 

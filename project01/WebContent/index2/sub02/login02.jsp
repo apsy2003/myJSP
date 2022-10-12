@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="/project01/index2/sub02/css/login02.css"/>	
 	<link rel="stylesheet" href="/project01/index2/sub02/main/css/header2.css"/>
 	<link rel="stylesheet" href="/project01/index2/sub02/main/css/footer.css"/>
+	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/index2/sub02/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/index2/sub02/js/sub02.js"></script>
 <script>
