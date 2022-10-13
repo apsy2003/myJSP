@@ -20,11 +20,11 @@
 
    <script  src="http://code.jquery.com/jquery-latest.min.js"></script> 
    <script type="text/javascript" >
-     function backToList(obj){
+   function backToList(obj){
 	    obj.action="${contextPath}/board/listArticles.do";
 	    obj.submit();
-     }
- 
+    }
+
 	 function fn_enable(obj){
 		 document.getElementById("i_title").disabled=false;
 		 document.getElementById("i_content").disabled=false;
@@ -75,7 +75,7 @@
 	         }
 	         reader.readAsDataURL(input.files[0]);
 	     }
-	 }  
+	 }
  </script>
 </head>
 <body>

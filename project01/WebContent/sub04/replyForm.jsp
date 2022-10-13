@@ -81,7 +81,7 @@
     <div class="reply_tit">
     	<div class="r_writer fl">
 			<div class="r_wri fl"> 글쓴이 </div>
-			<input type="text" class="wri_txt" size="5" value="lee" disabled />
+			<input type="text" class="wri_txt" size="5" value="admin" disabled />
 		</div>
 		<div class="r_title fl">
 			<div class="r_tit fl">글제목 </div>

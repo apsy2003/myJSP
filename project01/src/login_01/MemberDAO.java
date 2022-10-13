@@ -132,6 +132,8 @@ public class MemberDAO {
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, id);
 			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -155,7 +157,7 @@ public class MemberDAO {
 			//커서를 첫번째 레코드로 위치시킵니다.
 			rs.next(); 
 			result = Boolean.parseBoolean(rs.getString("result"));
-			System.out.println("result=" + result);			
+			System.out.println("result=" + result);	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
