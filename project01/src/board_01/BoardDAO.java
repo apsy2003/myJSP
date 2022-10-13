@@ -275,8 +275,10 @@ public class BoardDAO {
 				articleNO = rs.getInt("articleNO");
 				articleNOList.add(articleNO);
 			}
+			rs.close();
 			pstmt.close();
 			conn.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

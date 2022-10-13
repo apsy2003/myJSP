@@ -67,9 +67,9 @@ div{box-sizing: border-box;}
 /* page */
 
 /* .page_Wrap{ } */
-.con_page{ margin-bottom:80px; display:block; height:30px;}
-.con_page>a{display:block; float:left; width:30px; height:30px; background:#dddddd; color:#555555; font-size:12px; text-align:center; line-height:30px; margin: 50px 0 0 756px;}
+.con_page{width:1420px; margin:0 auto; display:block; height:250px; padding:150px 0 0 719px; text-align:center;}
+.con_page>a{display:block; float:left; width:30px; height:30px; background:#dddddd; color:#555555; font-size:12px; text-align:center; line-height:30px; margin-left:10px;}
 
 /* post */
 .postWrap{display:block; width : 1420px; margin : 0 auto;} 
-.post{ position:absolute; right:0; bottom:-52px; display:block; padding:8px 20px; text-align:center; font-size:12px; background:#3d3884; color:#ffffff; text-align:center; } 
+.post{ position:absolute; right:0; bottom:185px; display:block; padding:8px 20px; text-align:center; font-size:12px; background:#3d3884; color:#ffffff; text-align:center; } 
