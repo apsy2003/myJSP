@@ -66,12 +66,12 @@
 					<li class="menutitle"><img src="/project01/sub04/images/lnb_bg.png" alt=""/><span>이용안내</span></li>
 					<li class="menu1"><a href="/project01/board/listArticles.do"><span class="Text">도서관소식</span></a></li>
 					<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">자주하는질문</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">도서관이용안내</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">상호대차</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">모바일앱</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">스마트도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">책배달서비스</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">전자도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/board/listArticles.do"><span class="Text">도서관이용안내</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">상호대차</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/board/listArticles.do"><span class="Text">모바일앱</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">스마트도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/board/listArticles.do"><span class="Text">책배달서비스</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/sub03/sub03.jsp"><span class="Text">전자도서관</span><span class="Img"><img src="/project01/sub04/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 				</ul>
 			</div>
 		</div>

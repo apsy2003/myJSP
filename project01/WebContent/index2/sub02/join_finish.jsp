@@ -49,8 +49,8 @@
 				<ul>
 					<li class="menutitle"><img src="/project01/index2/images/lnb_bg.png" alt=""/><span>회원가입</span></li>
 					<li class="menu2"><a href="/project01/sub02/login01.jsp"><span class="Text">로그인</span><span class="Img"><img src="/project01/index2/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">아이디찾기</span><span class="Img"><img src="/project01/index2/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
-					<li class="menu2"><a href="#"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="/project01/index2/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/sub02/login01.jsp"><span class="Text">아이디찾기</span><span class="Img"><img src="/project01/index2/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
+					<li class="menu2"><a href="/project01/index2/sub02/login02.jsp"><span class="Text">비밀번호 재발급</span><span class="Img"><img src="/project01/index2/images/lnb_minus_off.png" alt="minusImg"/></span></a></li>
 					<li class="menu1"><a href="/project01/index2/sub02/login02.jsp"><span class="Text">회원가입</span></a></li>
 				</ul>
 			</div>

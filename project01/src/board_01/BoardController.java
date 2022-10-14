@@ -77,6 +77,19 @@ public class BoardController extends HttpServlet {
 				articlesMap.put("pageNum", pageNum);
 				request.setAttribute("articlesMap", articlesMap);
 				nextPage = "/sub04/listArticles.jsp";
+			} else if (action.equals("/listArticlesLogin.do")) {
+				String _section=request.getParameter("section");
+				String _pageNum=request.getParameter("pageNum");
+				int section = Integer.parseInt(((_section==null)? "1":_section) );
+				int pageNum = Integer.parseInt(((_pageNum==null)? "1":_pageNum));
+				Map pagingMap=new HashMap();
+				pagingMap.put("section", section);
+				pagingMap.put("pageNum", pageNum);
+				Map articlesMap=boardService.listArticles(pagingMap);
+				articlesMap.put("section", section);
+				articlesMap.put("pageNum", pageNum);
+				request.setAttribute("articlesMap", articlesMap);
+				nextPage = "/index2/sub04/listArticles.jsp";
 			} else if (action.equals("/articleForm.do")) {
 				nextPage = "/sub04/articleForm.jsp";
 			} else if (action.equals("/addArticle.do")) {

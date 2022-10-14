@@ -6,6 +6,7 @@
 
 <%
 	request.setCharacterEncoding("UTF-8");
+	String userId = (String) session.getAttribute("login.id");
 %> 
 
 <!DOCTYPE html>
@@ -44,7 +45,7 @@
 					</div>
 					<div class="gnb2 fr">
 						<div class="admin fl">
-								<p class="userName fl"><span class="Atext"><strong>관리자(admin)</strong>님</span></p>
+								<p class="userName fl"><span class="Atext"><strong><%= userId %></strong>님</span></p>
 								<input type="submit" onClick="fn_sendMember()" id="loginbutton" title="회원관리" value="회원관리" class="Aministration fl"/>
 						</div>
 						<ul class="gmenu fl">
@@ -72,8 +73,8 @@
 						<li class="sub1_1 fl"><a href="/project01/index2/sub02/login02.jsp" tabindex="9"><fmt:message key="menu.nav2" /></a></li>
 						<li class="sub1_1 fl"><a href="/project01/index2/sub03/sub03.jsp" tabindex="9"><fmt:message key="menu.nav3" /></a></li>
 						<li class="sub1_1 fl"><a href="/project01/index2/sub04/sub04.jsp" tabindex="9"><fmt:message key="menu.nav4" /></a></li>
-						<li class="sub1_1 fl"><a href="/project01/board/listArticles.do" tabindex="9"><fmt:message key="menu.nav5" /></a></li>
-						<li class="sub1_1 fl"><a href="/project01/board/listArticles.do" tabindex="9"><fmt:message key="menu.nav6" /></a></li>
+						<li class="sub1_1 fl"><a href="/project01/board/listArticlesLogin.do" tabindex="9"><fmt:message key="menu.nav5" /></a></li>
+						<li class="sub1_1 fl"><a href="/project01/board/listArticlesLogin.do" tabindex="9"><fmt:message key="menu.nav6" /></a></li>
 						<li class="searchbtn fl"><a href="#" tabindex="54"><img src="/project01/index2/images/btn_search.png" width="30" height="30" alt="돋보기"/></a></li>
 					</ul>
 				</div>		
