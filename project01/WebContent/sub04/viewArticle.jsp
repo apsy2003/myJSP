@@ -79,7 +79,7 @@
  </script>
 </head>
 <body>
-<%@ include file="../sub04/main/header.jsp" %>
+<%@ include file="/sub04/main/header.jsp" %>
 <section id="viewWrap">
 	<div class="view">
 		<div class="contentTitle cf">

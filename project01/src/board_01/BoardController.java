@@ -91,7 +91,7 @@ public class BoardController extends HttpServlet {
 				request.setAttribute("articlesMap", articlesMap);
 				nextPage = "/index2/sub04/listArticles.jsp";
 			} else if (action.equals("/articleForm.do")) {
-				nextPage = "/sub04/articleForm.jsp";
+				nextPage = "/index2/sub04/articleForm.jsp";
 			} else if (action.equals("/addArticle.do")) {
 				int articleNO = 0;
 				Map<String, String> articleMap = upload(request, response);
@@ -121,7 +121,13 @@ public class BoardController extends HttpServlet {
 				articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
 				request.setAttribute("article", articleVO);
 				nextPage = "/sub04/viewArticle.jsp";
-			} else if (action.equals("/modArticle.do")) {
+			} else if (action.equals("/viewArticleLogin.do")) {
+				String articleNO = request.getParameter("articleNO");
+				articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
+				request.setAttribute("article", articleVO);
+				nextPage = "/index2/sub04/viewArticle.jsp";
+			}
+			else if (action.equals("/modArticle.do")) {
 				Map<String, String> articleMap = upload(request, response);
 				int articleNO = Integer.parseInt(articleMap.get("articleNO"));
 				articleVO.setArticleNO(articleNO);

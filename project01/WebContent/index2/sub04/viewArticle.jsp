@@ -21,7 +21,7 @@
    <script  src="http://code.jquery.com/jquery-latest.min.js"></script> 
    <script type="text/javascript" >
    function backToList(obj){
-	    obj.action="${contextPath}/board/listArticles.do";
+	    obj.action="${contextPath}/board/listArticlesLogin.do";
 	    obj.submit();
     }
 
@@ -79,7 +79,14 @@
  </script>
 </head>
 <body>
-<%@ include file="main/header.jsp" %>
+<c:choose>
+	<c:when test="${userId != 'null'}">
+		<%@ include file="/index2/sub04/main/header.jsp" %>
+	</c:when>
+	<c:when test="${userId == 'null'}">
+		<%@ include file="/main/header.jsp" %>
+	</c:when>
+</c:choose>
 <section id="viewWrap">
 	<div class="view">
 		<div class="contentTitle cf">
@@ -191,7 +198,7 @@
 				   <div class="btn_input2 fl">
 					   <input type=button class="btn3" value="수정하기" onClick="fn_enable(this.form)">
 					   <input type=button class="btn4" value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
-					   <input type=button class="btn5" value="리스트로 돌아가기"  onClick="backToList(this.form)">
+					   <input type=button class="btn5" value="리스트로 돌아가기"  onClick="backToList(frmArticle)">
 					    <input type=button class="btn6" value="답글쓰기"  onClick="fn_reply_form('${contextPath}/board/replyForm.do', ${article.articleNO})">
 				   </div>
 				  </div>

@@ -26,8 +26,9 @@
 	<script src="/project01/sub04/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub04/js/sub04.js"></script>
 	<script>
-		function loginCheck(){
-			if(<%= userId %> == null){
+		function loginCheck() {
+			var nickName = <%= userId %>
+			if(nickName == null) {
 				alert("로그인 후 이용해주세요.");
 				   location.href = "/project01/sub02/login01.jsp";
 			} else {

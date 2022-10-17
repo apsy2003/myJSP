@@ -28,6 +28,10 @@
 		   if(id.length==0 ||id=="" && pwd.length==0 ||pwd==""){
 			   alert("아이디와 비밀번호는 필수입니다.");
 		   } else if(id=="admin" && pwd=="ay2111!!"){
+			   <%
+			   String userId = (String) session.getAttribute("login.id");
+			   session.setAttribute("login.id", "admin");
+			   %>
 			   alert("관리자로 로그인 하셨습니다.");
 		      frmMember.method="post";
 		      frmMember.action="/project01/index2/index2.jsp";

@@ -10,7 +10,8 @@
 <c:set  var="pageNum"  value="${articlesMap.pageNum}" />
 
 <%
-  request.setCharacterEncoding("UTF-8");
+	request.setCharacterEncoding("UTF-8");
+	
 %> 
 <!DOCTYPE html>
 <html>
@@ -29,7 +30,14 @@
 </head>
 <body>
 
-<%@ include file="main/header.jsp" %>
+<c:choose>
+	<c:when test="${userId != 'null'}">
+		<%@ include file="/index2/sub04/main/header.jsp" %>
+	</c:when>
+	<c:when test="${userId == 'null'}">
+		<%@ include file="/main/header.jsp" %>
+	</c:when>
+</c:choose>
 <section id="listWrap">
 	<div class="contentTitle cf">
 		<h3 class="hidden">도서관소식</h3>
@@ -93,11 +101,11 @@
 				    <c:when test='${article.level > 1 }'>  
 				      
 			            <div class='con_num fl'>${articleNum.count}</div>
-			            <a class='con_tit fl' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}"><span class="response" style="font-size:12px;">[답변]</span>${article.title}</a>
+			            <a class='con_tit fl' href="${contextPath}/board/viewArticleLogin.do?articleNO=${article.articleNO}"><span class="response" style="font-size:12px;">[답변]</span>${article.title}</a>
 				    </c:when>
 				    <c:otherwise>
 				       <div class='con_num2 fl'>${articleNum.count}</div>
-			            <a class='con_tit2 fl' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+			            <a class='con_tit2 fl' href="${contextPath}/board/viewArticleLogin.do?articleNO=${article.articleNO}">${article.title}</a>
 				    </c:otherwise>
 				</c:choose>
 				<div class="con_wri fl">${article.id }</div>

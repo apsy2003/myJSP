@@ -35,7 +35,14 @@
 <title>답글쓰기 페이지</title>
 </head>
 <body>
-<%@ include file="main/header.jsp" %>
+<c:choose>
+	<c:when test="${userId != 'null'}">
+		<%@ include file="/index2/sub04/main/header.jsp" %>
+	</c:when>
+	<c:when test="${userId == 'null'}">
+		<%@ include file="/main/header.jsp" %>
+	</c:when>
+</c:choose>
  <section id="replyWrap">
 	<div class="reply">
 		<div class="contentTitle cf">

@@ -41,7 +41,14 @@
 
 </head>
 <body>
-<%@ include file="main/header.jsp" %>
+<c:choose>
+	<c:when test="${userId != null}">
+		<%@ include file="/index2/sub04/main/header.jsp" %>
+	</c:when>
+	<c:when test="${userId == null}">
+		<%@ include file="/main/header.jsp" %>
+	</c:when>
+</c:choose>
 <section id="ArticleWrap">
 	<div class="contentTitle cf">
 		<h3 class="hidden">도서관소식</h3>

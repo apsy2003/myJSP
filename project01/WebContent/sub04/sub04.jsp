@@ -25,6 +25,7 @@
 	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/sub04/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub04/js/sub04.js"></script>
+	
 </head>
 <body>
 
@@ -251,7 +252,6 @@
 								<button class="btn1">&gt;&gt;</button>
 								<button class="btn2">&gt;</button>
 							</div>
-							<a  class="cls1"  href="${contextPath}/board/articleForm.do">글쓰기</a>
 						</div>
 					</div>
 				</div>

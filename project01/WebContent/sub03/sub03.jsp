@@ -18,6 +18,7 @@
 	<link rel="shortcut icon" href="/project01/index/images/index.ico"/>
 	<script src="/project01/sub03/js/jquery-1.7.1.min.js"></script>
 	<script src="/project01/sub03/js/sub03.js"></script>
+	
 </head>
 <body>
 	<%@ include file="main/header.jsp" %>
