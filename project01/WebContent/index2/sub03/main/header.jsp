@@ -70,12 +70,12 @@
 				<div class="sub1Wrap">
 					<h1 class="logo fl"><a href="/project01/index2/index2.jsp" tabindex="8"><img src="/project01/index2/images/logo.png" alt="로고"/></a></h1>
 					<ul class="sub1 cf">
-						<li class="sub1_1 fl"><a href="/project01/index2/sub03/sub03.jsp" tabindex="9"><fmt:message key="menu.nav1" /></a></li>
-						<li class="sub1_1 fl"><a href="/project01/index2/sub04/sub04.jsp" tabindex="9"><fmt:message key="menu.nav2" /></a></li>
+						<li class="sub1_1 fl"><a href="${contextPath}/board/listArticlesLogin.do" tabindex="9"><fmt:message key="menu.nav1" /></a></li>
+						<li class="sub1_1 fl"><a href="${contextPath}/board/listArticlesLogin.do" tabindex="9"><fmt:message key="menu.nav2" /></a></li>
 						<li class="sub1_1 fl"><a href="/project01/index2/sub03/sub03.jsp" tabindex="9"><fmt:message key="menu.nav3" /></a></li>
-						<li class="sub1_1 fl"><a href="/project01/index2/sub04/sub04.jsp" tabindex="9"><fmt:message key="menu.nav4" /></a></li>
-						<li class="sub1_1 fl"><a href="${contextPath}/board/listArticlesLogin.do" tabindex="9"><fmt:message key="menu.nav5" /></a></li>
-						<li class="sub1_1 fl"><a href="${contextPath}/board/listArticlesLogin.do" tabindex="9"><fmt:message key="menu.nav6" /></a></li>
+						<li class="sub1_1 fl"><a href="/project01/index2/sub03/sub03.jsp" tabindex="9"><fmt:message key="menu.nav4" /></a></li>
+						<li class="sub1_1 fl"><a href="/project01/index2/sub04/sub04.jsp" tabindex="9"><fmt:message key="menu.nav5" /></a></li>
+						<li class="sub1_1 fl"><a href="/project01/index2/sub04/sub04.jsp" tabindex="9"><fmt:message key="menu.nav6" /></a></li>
 						<li class="searchbtn fl"><a href="#" tabindex="54"><img src="/project01/index2/images/btn_search.png" width="30" height="30" alt="돋보기"/></a></li>
 					</ul>
 				</div>		
